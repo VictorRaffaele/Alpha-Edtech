@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <!-- Titulo da pagina -->
+        <title>Praticando Html - My Game List </title>
+        <!-- Icone da pagina -->
+        <link rel="icon" href="imagens/icon.jpg"/>
+        <!--Open Graph meta dados-->
+        <meta property="og:title" content="My Game List"/>
+        <meta property="og:url" content="https://github.com/VictorRaffaele/Alpha-Edtech/blob/main/Modulo%203/Atividade6/MyGameList.html"/>
+        <meta property="og:image" content="https://http2.mlstatic.com/steam-controller-controle-valve-para-pc-12x-sem-juros-D_NQ_NP_849099-MLB25897278684_082017-F.jpg"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:description" content="Nessa pagina se encontram alguns jogos dos quais gostei muito de jogar ao longo do tempo!"/>
+        
+        <style>
+
+            .centro{
+
+                text-align: center;
+                padding: 20px 0px 0px 0px;
+            }
+
+        </style>
+
+    </head>
+    <!-- cor #666666 se refere ao tom de cinza utilizado de fundo na pagina, e para melhorar a legibilidade a fonte do texto foi colocada como branco -->
+    <body style="background-color:grey; color:white"> 
+        <!-- Cabeçalho da pagina -->
+        <header>
+            <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 200" width="2000" height="200">
+                <title>template</title>
+                <style>
+                    .s0 { fill: #6538eb } 
+                    .s1 { fill: #dbd1fa } 
+                    .s2 { fill: #ffffff } 
+                </style>
+                <path id="Background" class="s0" d="m0 0h2000v200h-2000z"/>
+                <g id="skull">
+                    <path id="Layer" fill-rule="evenodd" class="s1" d="m338.3 39.7c5.4 3.4 5.4 6.8 5.4 9.5l60.4 8.8c35.7-22.4 123.5-37.3 222.3-37.3 101.5 0 186.6 14.9 222.2 35.9l54.9-7.4c0-3.4 2.7-6.1 5.5-9.5 13.7-12.2 49.4-21 79.6-19 27.4 1.4 41.1 13.6 27.4 25.8 0 0.6-2.7 0.6-2.7 1.3 2.7 0 2.7 0 5.4 0 49.4 3.4 85.1 12.2 76.9 19-8.3 7.4-54.9 10.2-107 6.8-13.8-0.7-24.7-2.1-35.7-3.4l-85.1 12.2c-2.7 12.2-19.2 23-46.6 31.8l96 13.6c11-1.4 22-2.7 35.7-3.4 52.1-3.4 98.8 0 107 6.8 8.2 7.4-27.4 15.6-79.6 19 0 0.6-2.7 0.6-2.7 0.6v0.7c13.7 12.9 2.7 24.4-27.4 26.4-27.5 2.1-63.2-6.7-76.9-19.6-2.7-3.4-5.5-6.1-5.5-9.5l-65.8-9.5c-2.8 23.7-79.6 42-175.6 42-96.1 0-172.9-19-175.6-42l-68.6 10.2c-2.8 2.7-2.8 5.4-5.5 8.8-13.7 12.9-49.4 21.7-79.6 19.6-27.4-2-41.2-14.2-27.4-26.4 0-0.7 0-0.7 2.7-0.7-2.7-0.6-2.7-0.6-5.5-0.6-49.4-3.4-85-11.6-76.8-19 8.2-7.5 54.9-10.2 107-6.8 11 0.7 24.7 2 35.7 3.4l98.8-14.2c-24.7-8.2-41.2-19-43.9-29.9l-93.3-13.5c-11 1.3-22 2.7-35.7 3.4-49.4 3.4-98.8 0.6-107-6.8-5.5-6.8 27.4-15.6 79.5-19h2.8c0-0.7 0-0.7 0-1.3-13.7-12.2-2.8-24.4 27.4-26.5 30.2-1.3 63.1 6.8 76.9 19.7zm183.8 19.6c-49.4 0-87.8 9.5-87.8 21 0 12.2 38.4 21.7 87.8 21.7 46.6 0 85.1-9.5 85.1-21.7 0-11.5-38.5-21-85.1-21zm211.3 0c-49.4 0-87.8 9.5-87.8 21 0 12.2 38.4 21.7 87.8 21.7 46.6 0 85-9.5 85-21.7 0-11.5-38.4-21-85-21zm-156.4 60.4h96l-49.4-17z"/>
+                </g>
+                <path id="My Game List" class="s2" aria-label="My Game List"  d="m1377.9 109h17.5v-15.1h1.1l6.2 15.1h18.4l6.3-15.1h1v15.1h17.8v-20.5h-28.3l-5 13.8h-0.9l-5.1-13.8h-29zm95.3 6.1c20.4 0 20.8-2.6 20.8-7.8v-13.5h-17.3v7.1c0 3.9 0 4-2.8 4-2.8 0-2.8 0-2.8-3.4v-7.7h-17.4v9.9c0 3.6 1.6 5.1 11 5.1 3.6 0 8.8-0.3 10.9-1.9h1.1v1.7c0 2.8-0.2 2.9-7.8 2.9h-11.8v3.3c4 0.2 10.5 0.3 16.1 0.3zm67.7-5.9c6.8 0 14.8-0.2 19.6-0.6v-11.9h-20.3v4h3.7v4.5c-0.2 0-1 0-2.4 0-5.3 0-5.7-0.5-5.7-6.5 0-6.3 1.4-6.3 11.9-6.3 1.9 0 7.6 0.1 12.6 0.2v-3.8c-4.8-0.3-12.2-0.6-17.4-0.6-20.6 0-25.4 2-25.4 10.5 0 8.5 4.2 10.5 23.4 10.5zm36.9 0c4.4 0 8.2-0.7 9.3-1.9h1.1l0.5 1.7h16.8v-9.3c0-4.5-4.2-6.2-20.3-6.2-7 0-13.3 0.3-16.8 0.4v3.4c2.6-0.1 5.7-0.1 11.4-0.1 7.7 0 8.3 0.1 8.3 2.1v0.6c-1.8 0-5.2-0.1-7.5-0.1-11.2 0-14.7 1.3-14.7 4.7 0 3 2.2 4.7 11.9 4.7zm7.3-3.9c-2.7 0-2.7-0.4-2.7-1.2 0-1.1 0.7-1.4 3-1.4h2.7v0.8c0 0.7-0.1 1.2-0.4 1.5-0.4 0.3-1.3 0.3-2.6 0.3zm27.4 3.7h17.4v-7.5c0-4 0-4.1 2.6-4.1 2.8 0 2.8 0.1 2.8 3.4v8.2h17.4v-7.5c0-4 0-4.1 2.6-4.1 2.8 0 2.8 0.1 2.8 3.4v8.2h17.4v-10.6c0-3.4-2.2-4.9-11.1-4.9-4.7 0-8.9 0.4-11.3 2h-1.1c-1.1-1.3-4.1-2-9.9-2-4.9 0-9 0.4-11.3 2h-1.1l-0.4-1.7h-16.8zm108.2-7.6c0-5.6 0-7.9-19-7.9-19 0-20.2 2.7-20.2 7.9 0 5.2 0.5 7.8 20.9 7.8 6.2 0 13.3-0.2 17.3-0.4v-3.3c-4 0-10.8 0.1-13 0.1-7.7 0-7.8-0.2-7.8-2.9h21.8zm-19-4.3c2.8 0 2.9 0.2 2.9 2.6h-5.7c0-2.5 0.5-2.6 2.8-2.6zm42.6 11.8h32.3v-4.2h-13.7v-16.3h-18.6zm37.1-17.6h17.4v-4.5h-17.4zm0 17.6h17.4v-15.3h-17.4zm39.8 0.3c11.3 0 17.8-1.1 17.8-5.2 0-3.7-5.3-4.1-9.2-4.3l-5.9-0.4c-2.6-0.1-2.7-0.1-2.7-1.2 0-0.8 0.8-1 5.2-1 2.2 0 6.4 0.1 9.8 0.2v-3.3c-3.4-0.3-9.3-0.5-14-0.5-11.8 0-18.4 1.4-18.4 4.7 0 3.1 2.3 4.3 7 4.5l7.6 0.4c3.2 0.2 3.7 0.2 3.7 1.3 0 1.1-2.4 1.1-6.8 1.1-2.5 0-7.2 0-10.3-0.1v3.2c4.2 0.3 11 0.6 16.2 0.6zm25-0.3h17.4v-11.5h8v-3.7h-8v-4.4h-17.4v4.4h-5.4v3.7h5.4z"/>
+            </svg>
+            <h1>My Game List</h1>
+            <h3>Nessa pagina se encontram alguns jogos dos quais gostei muito de jogar ao longo do tempo!</h3>
+        </header>
+        <!--Lista de navegação-->
+        <nav style="width: 25%;">
+            <ul>
+                <a href="#hollow-knight"><li>Hollow Knight</li></a>
+                <a href="#megaman"><li>Megaman X Legacy Collection</li></a>
+                <a href="#skyrim"><li>Elder Scrolls V: Skyrim</li></a>
+                <a href="#pokemon-bw2"><li>Pokémon Black 2 / White 2</li></a>
+                <a href="#teso"><li>Elder Scrolls Online</li></a>
+                <a href="#lol"><li>League of Legends</li></a>
+            </ul>
+        </nav>
+        <main style="margin-left: 0%;">
+            <!-- Seção dos jogos de plataforma -->
+            <section>
+                <h2>Jogos Plataforma</h2>
+                <!-- Subseção Hollow Knight --> 
+                <article style="width: 90%;">
+                    <a href="https://www.hollowknight.com" target="_blank"> 
+                        <h3 style="color: white;" id="hollow-knight">
+                            <ins>Hollow Knight</ins>
+                        </h3>
+                    </a>
+                    <h4>Desenvolvedora: Team Cherry</h4>
+                    <figure class="centro">
+                        <a target="_blank" href="https://cdn02.nintendo-europe.com/media/images/10_share_images/games_15/wiiu_download_software_5/H2x1_WiiUDS_HollowKnight_image1280w.jpg"> 
+                            <img src="imagens/hollow.jpg" alt="Capa do jogo" />
+                        </a>
+                    </figure>
+                    <p>
+                        Esse jogo é do subgenero <strong>Metroidvania</strong>. E conta a historia de um besouro que desperta em um local escuro e isolado, e ele resolve sair em busca de descobrir o mistério por trás 
+                        de seu surgimento e da ruina que se encontra o reino de Hallownest.
+                    </p>
+                    <p><b>Trailer do jogo:</b></p>
+                    <figure class="centro">
+                        <iframe width="700" height="500" src="https://www.youtube.com/embed/UAO2urG23S4" title="Hollow Knight trailer" frameborder="0" allow=" clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </figure>
+                    <!--Iframe Spotify-->
+                    <p>Gostou do jogo? Que tal escutar um pouco da trilha sonora dele?</p>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/4XgGOMRY7H4hl6OQi5wb2Z?utm_source=generator" width="50%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </article>
+                <!-- Subseção Megaman -->
+                <article style="width: 90%;">
+                    <a target="_blank" href="https://megaman.capcom.com/mmxlc.html" > 
+                        <h3 id="megaman" style="color: white;">
+                            <ins>Megaman X Legacy Collection</ins>
+                        </h3> 
+                    </a>
+                    <h4>Desenvolvedora: Capcom </h4>
+                    <figure class="centro">
+                            <a target="_blank" href="https://cdn-prod.scalefast.com/public/assets/user/8731055/image/fe90d7b174a2c7af21f91ce1e18eff4d.png">
+                                <img src="imagens/megaman.jpg" alt="Capa do jogo"/>
+                            </a>
+                    </figure>
+                    <p>
+                        Esse jogo se trata de uma coletânea com os quatro primeiros jogos da serie Megaman X. Se trata de um Reploid
+                        (robos com conciência e personalidade própria) em um mundo distopico onde alguns desses robos começam a se revoltar contra humanidade 
+                        e você tem que derrota-los.
+                    </p>
+                    <p><b>Trailer do jogo:</b></p>
+                    <figure class="centro">
+                        <iframe width="700" height="500" src="https://www.youtube.com/embed/qVcsI4xoiho" title="Megaman trailer" frameborder="0" allow=" clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </figure>
+                    <!--Iframe Spotify-->
+                    <p>Gostou do jogo? Que tal escutar um pouco da trilha sonora dele?</p>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5lLo11AN8HBftsAuiLzBma?utm_source=generator" width="50%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </article>
+            </section>
+            <!-- Seção dos jogos RPGs -->
+            <section>
+                <h2>RPGs</h2>
+                <!-- Subseção Skyrim -->
+                <article style="width: 90%;">
+                    <a href="https://elderscrolls.bethesda.net/pt/skyrim/" target="_blank"> 
+                        <h3 id="skyrim" style="color: white;">
+                            <ins>Elder Scrolls V: Skyrim</ins>
+                        </h3> 
+                    </a>
+                    <h4>Desenvolvedora: Bethesda</h4>
+                    <figure class="centro">
+                        <a target="_blank" href="https://www.mobygames.com/images/covers/l/234857-the-elder-scrolls-v-skyrim-windows-other.jpg">
+                            <img src="imagens/skyrim.jpg" alt="Capa do jogo"/>
+                        </a>
+                    </figure>
+                    <p>
+                        Esse jogo se passa em um mundo medieval fantastico, onde você descobre ser descendente de uma linhagem antiga e que era pensado
+                        não existir mais e ao descobrir sobre um dragão que planeja a volta dos dragões como a raça soberana no mundo, parte para o derrotar.
+                    </p>
+                    <p><b>Trailer do jogo:</b></p>
+                    <figure class="centro">
+                        <iframe width="700" height="500" src="https://www.youtube.com/embed/JSRtYpNRoN0" title="Skyrim trailer" frameborder="0" allow="clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </center>
+                    </figure>
+                    <!--Iframe Spotify-->
+                    <p>Gostou do jogo? Que tal escutar um pouco da trilha sonora dele?</p>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/25r7pEf31viAbsoVHC6bQ4?utm_source=generator" width="50%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>                       
+                </article>
+                <!-- Subseção Pokemon -->
+                <article style="width: 90%;">
+                    <a href="https://www.pokemon.com/us/pokemon-video-games/pokemon-black-version-2-and-pokemon-white-version-2/" target="_blank"> 
+                        <h3 id="pokemon-bw2" style="color: white;">
+                            <ins>Pokémon Black 2 / White 2</ins>
+                        </h3>
+                    </a>
+                    <h4>Desenvolvedora: Game Freak </h4>
+                    <figure class="centro">
+                        <a target="_blank" href="http://4.bp.blogspot.com/-_VxoJikyadg/T-pLesZhFuI/AAAAAAAAAS8/0BhJVYlKA10/s1600/bw2_maindetail.jpg">
+                            <img src="imagens/blackbox.jpg" alt="Capa dos jogos"/>
+                        </a>
+                    </figure>
+                    <p>
+                        Mais um jogo da série <strong>Pokémon</strong>, se passando na quinta geração como ultimo jogo de Pokémon lançado para o <a href="https://pt.wikipedia.org/wiki/Nintendo_DS" style="color: white;"> Nintendo DS</a>, esse jogo 
+                        se passa na região de Unova como da sua versão anterior (Pokémon Black/White). Porém para esse jogo foram adicionados muitas features
+                        novas, principalmente voltadas ao pós game, o que junto a sua história, o consagraram como um dos preferidos dos fãs até os dias de hoje.
+                    </p>
+                    <p><b>Trailer do jogo:</b></p>
+                    <figure class="centro">
+                        <iframe width="700" height="500" src="https://www.youtube.com/embed/QqVU5j_yvnw" title="Pokémon trailer" frameborder="0" allow="clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                    </figure>
+                    <!--Iframe Spotify-->
+                    <p>Gostou do jogo? Que tal escutar um pouco da trilha sonora dele?</p>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3SaDbz9KkzDgLsClA8Wkwa?utm_source=generator" width="50%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </article>
+            </section>
+            <!-- Seção dos jogos multijogadores -->
+            <section>
+                <h2>Multijogadores</h2>
+                <!-- Subseção TESO -->
+                <article style="width: 90%;">
+                    <a href="https://www.elderscrollsonline.com/en-us/home" target="_blank"> 
+                        <h3 id="teso" style="color: white;">
+                            <ins>Elder Scrolls Online</ins>
+                        </h3>
+                    </a>
+                    <h4>Desenvolvedora: Zenimax</h4>
+                    <figure class="centro">
+                        <a target="_blank" href="https://gamefans.ru/uploads/posts/2020-04/1586416404_the-elder-scrolls-online-poster.jpg">
+                            <img src="imagens/ESO.jpg" alt="Capa do jogo"/>
+                        </a>
+                    </figure>
+                    <p>
+                        Esse jogo é do genero <strong>MMORPG</strong>, e se trava de um jogo medieval fantastico onde você tem liberdade de criar seu personagem e modelar ele
+                        como desejar, além de poder escolher sua raça e classe.<br> O jogo tem um dos maiores mapas que já vi em um jogo de mundo aberto e tem diversos
+                        tipos de conteudos para se fazer durante o jogo, desde missões principais e secundarias, dungeons, battlegrounds (mini jogos, jogadores vs jogadores),
+                        duelos contra outros jogadores, raids e muito mais.
+                    </p>
+                    <figure class="centro">
+                        <iframe width="700" height="500" src="https://www.youtube.com/embed/uq1o2VG1ogY" title="Trailer TESO" frameborder="0" allow="  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </figure>
+                    <!--Iframe Spotify-->
+                    <p>Gostou do jogo? Que tal escutar um pouco da trilha sonora dele?</p>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/1Izk5BfWEcqO6flNet5gey?utm_source=generator" width="50%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </article>
+                <!-- Subseção LOL -->
+                <article style="width: 90%;">
+                    <a href="https://www.leagueoflegends.com/en-us/" target="_blank"> 
+                        <h3 id="lol" style="color: white;">
+                            <ins>League of Legends</ins>
+                        </h3>
+                    </a>
+                    <h4>Desenvolvedora: Riot Games</h4>
+                    <figure class="centro">
+                        <a target="_blank" href="https://www.guardadorapido.com/wp-content/uploads/2020/11/league-of-legends-campeones.jfif_-1068x711.png">
+                            <img src="imagens/LOL.png" alt="Capa do jogo"/>
+                        </a>
+                    </figure>
+                    <p>
+                        Esse jogo é do <strong>MOBA</strong>, que consiste em dez jogadores separados em dois times de cinco jogadores cada, e eles se enfretam dentro de uma arena
+                        com objetivo principal de derrubarem a base do time inimigo.
+                    </p>
+                    <figure class="centro">
+                        <iframe width="700" height="500" src="https://www.youtube.com/embed/IzMnCv_lPxI" title="Trailer LOL" frameborder="0" allow="clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </figure>
+                    <!--Iframe Spotify-->
+                    <p>Gostou do jogo? O League of Legends pode não ter uma trilha sonora como as demais, porém a Riot Games sempre faz musicas tematicas ou com base na historia do jogo, algumas inclusive são famosas fora do mundo do jogo. Se achou interessante, escuta um pouco, pode até ser que já tenha escutado alguma.</p>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/47mIJdHORyRerp4os813jD?utm_source=generator" width="50%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                </article>
+            </section>
+        </main>
+        <br/>
+        <!-- Tabela de preços -->
+        <fieldset style="width: 30%;">
+            <h2>Tabela de Preços</h2>
+            <table border="1px">
+                <!-- Linhas Hollow Knight -->
+                <tr>
+                    <td>Nome</td>
+                    <td>Plataforma</td>
+                    <td>Valor</td>
+                </tr>
+                <tr>
+                    <td>Hollow Knight</td>
+                    <td><a href="https://store.steampowered.com/app/367520/Hollow_Knight/" target="_blank">Steam</a></td>
+                    <td>R$27,99</td>
+                </tr>
+                <tr>
+                    <td>Hollow Knight</td>
+                    <td><a href="https://www.nintendo.com/pt_BR/games/detail/hollow-knight-switch/" target="_blank">Switch</a></td>
+                    <td>R$27,99</td>
+                </tr>
+                <tr>
+                    <td>Hollow Knight</td>
+                    <td><a href="https://store.playstation.com/pt-br/product/UP1822-CUSA13632_00-HOLLOWKNIGHT18US/" target="_blank">PS4</a></td>
+                    <td>R$62,50</td>
+                </tr>
+                <tr>
+                    <td>Hollow Knight</td>
+                    <td><a href="https://www.xbox.com/pt-br/games/store/hollow-knight-edicao-coracao-vazio/9mw9469v91lm" target="_blank">Xbox</a></td>
+                    <td>R$54,95</td>
+                </tr>
+                <!-- Linhas Megaman -->
+                <tr>
+                    <td>Megaman X Collection</td>
+                    <td><a href="https://store.steampowered.com/app/743890/Mega_Man_X_Legacy_Collection/" target="_blank">Steam</a></td>
+                    <td>R$39,99</td>
+                </tr>
+                <tr>
+                    <td>Megaman X Collection</td>
+                    <td><a href="https://www.nintendo.com/pt_BR/games/detail/mega-man-x-legacy-collection-switch/" target="_blank">Switch</a></td>
+                    <td>R$82,50</td>
+                </tr>
+                <tr>
+                    <td>Megaman X Collection</td>
+                    <td><a href="https://store.playstation.com/pt-br/product/UP0102-CUSA10785_00-RXAC100000000001" target="_blank">PS4</a></td>
+                    <td>R$89,99</td>
+                </tr>
+                <tr>
+                    <td>Megaman X Collection</td>
+                    <td><a href="https://www.xbox.com/pt-br/games/store/Mega-Man-X-Legacy-Collection/BT07CDVG6Z9G" target="_blank">Xbox</a></td>
+                    <td>R$89,00</td>
+                </tr>
+                <!-- Linhas Skyrim -->
+                <tr>
+                    <td>The Elder Scrolls V: Skyrim Special Edition</td>
+                    <td><a href="https://store.steampowered.com/app/489830/The_Elder_Scrolls_V_Skyrim_Special_Edition/" target="_blank">Steam</a></td>
+                    <td>R$149,00</td>
+                </tr>
+                <tr>
+                    <td>The Elder Scrolls V: Skyrim Special Edition</td>
+                    <td><a href="https://www.nintendo.com/pt_BR/games/detail/the-elder-scrolls-v-skyrim-switch/" target="_blank">Switch</a></td>
+                    <td>R$299,00</td>
+                </tr>
+                <tr>
+                    <td>The Elder Scrolls V: Skyrim Special Edition</td>
+                    <td><a href="https://www.playstation.com/pt-br/games/the-elder-scrolls-v-skyrim/#editions" target="_blank">PS4</a></td>
+                    <td>R$199,50</td>
+                </tr>
+                <tr>
+                    <td>The Elder Scrolls V: Skyrim Special Edition</td>
+                    <td><a href="https://www.xbox.com/pt-BR/games/store/the-elder-scrolls-v-skyrim-special-edition/BQ1W1T1FC14W/0001" target="^_blank">Xbox</a></td>
+                    <td>R$199,95</td>
+                </tr>
+                <!-- Linha Pokemon -->
+                <tr>
+                    <td>Pokémon Black 2/ White 2</td>
+                    <td><a href="https://www.amazon.com/-/pt/dp/B0050SVNSU/ref=sr_1_21?keywords=pokemon+black&qid=1651068753&sr=8-21" target="^_blank">NDS</a></td>
+                    <td>R$1.123,91</td>
+                </tr>
+                <!-- Linhas TESO -->
+                <tr>
+                    <td>The Elder Scrolls Online</td>
+                    <td><a href="https://store.steampowered.com/app/306130/The_Elder_Scrolls_Online/" target="_blank">Steam</a></td>
+                    <td>R$61,50</td>
+                </tr>
+                <tr>
+                    <td>The Elder Scrolls Online</td>
+                    <td><a href="https://store.playstation.com/pt-br/product/UP1003-PPSA02017_00-ESOMORROWINDBUND" target="_blank">PS4</a></td>
+                    <td>R$83,50</td>
+                </tr>
+                <tr>
+                    <td>The Elder Scrolls Online</td>
+                    <td><a href="https://www.xbox.com/pt-br/games/store/the-elder-scrolls-online/brkx5crmrtc2" target="^_blank">Xbox</a></td>
+                    <td>R$62,00</td>
+                </tr>
+                <!-- Linha LOL -->
+                <tr>
+                    <td>League of Legends</td>
+                    <td><a href="https://www.leagueoflegends.com/en-us/" target="^_blank">PC</a></td>
+                    <td>R$00,00</td>
+                </tr>
+            </table>
+        </fieldset>
+        <!--Seção Comentários-->
+        <section>
+            <h2>Comentários</h2>
+            <p>Você também gosta de algum desses jogos? Deixe seu comentário ou duvida sobre aqui!</p>
+            <p>Ainda não é cadatrado em nosso site? <a href="./cadastro.html">Clique aqui!</a></p>
+            <!-- Form Comentarios -->
+            <form action="MyGameList.html" method="post">
+                <!-- Campo nome -->
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="visitante"/>
+                </div>
+                <!-- Campo email -->
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="visitante_email"/>
+                </div>
+                <!-- Campo de opcoes de comentarios -->
+                <div>
+                    <label for="op_duvida">Dúvida</label>
+                    <input type="radio" id="op_duvida" name="escolha"/>
+                    <label for="op_comentario">Comentário</label>
+                    <input type="radio" id="op_comentario" name="escolha"/>
+                </div>
+                <!-- Area de texto -->
+                <div>
+                    <label for="msg">Mensagem:</label>
+                    <textarea id="msg" name="msg_visitante">Digite seu texto aqui!</textarea>
+                </div>
+                <!-- Botão de confirmação -->
+                <div class="button">
+                    <button type="submit">Enviar!</button>
+                </div>
+            </form>
+        </section>
+    </body>
+    <!--Roda pé-->
+    <footer>
+            <p>
+                <b>Sobre:</b><br/>
+                Desenvolvido por: Victor A. Raffaele<br/>
+                Postado em: <a href="https://github.com/VictorRaffaele/Alpha-Edtech">Repositorio Github</a>
+            </p>
+    </footer>
+</html>
