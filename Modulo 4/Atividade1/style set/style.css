@@ -1,0 +1,39 @@
+.centro {
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+}
+
+article {
+    width: 90%;
+    border: 1px solid lightgray;
+}
+
+h3 {
+    margin-left: 5px;
+}
+
+h4 {
+    margin-left: 5px;
+}
+
+p {
+    margin-left: 5px;
+}
+
+iframe {
+    max-width: 100%;
+    max-height: auto;
+}
+
+figure {
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+table{
+    border: 1px solid;
+}
