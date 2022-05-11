@@ -41,3 +41,11 @@ table{
 a{
     color: white;
 }
+
+a:hover{
+    color: blue;
+}
+
+a:active{
+    color: red;
+}
