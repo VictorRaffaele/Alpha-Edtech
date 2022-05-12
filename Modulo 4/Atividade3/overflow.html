@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <!-- Titulo da pagina -->
+        <title>Praticando Html - Overflow </title>
+        <style>
+            div {
+                border: 2px solid black;
+                width: 1300px;
+                height: 700px;
+                margin-bottom: 50px;
+                overflow: hidden;
+            }
+
+            .divVisible{
+                border: 2px solid black;
+                width: 1300px;
+                height: 700px;
+                overflow: visible;
+            }
+
+            .divScroll{
+                border: 2px solid black;
+                width: 1300px;
+                height: 700px;
+                overflow: scroll;
+            }
+        </style>
+    </head>
+    <body style="margin-top: 50px; margin-left: 150px; margin-right: 150px; margin-bottom: 50px;">
+        <div style="margin-bottom: 15px;">
+            <img src="./imagem/Easter.png" />
+        </div>
+        <div class="divScroll">
+            <img src="./imagem/Easter.png" />
+        </div>
+        <div class="divVisible">
+            <img src="./imagem/Easter.png" />
+        </div>
+    </body>
+</html>
