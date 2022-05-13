@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Praticando HTML - Border and Background</title>
+        <style>
+            
+            .boxSolid{
+                border: 3px solid rgb(0,0,0);
+                border-radius: 55px;
+                width: 1000px;
+                padding-left: 1rem;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                padding-right: 1rem;
+            }
+            
+            .boxSolidTrans{
+                border: 3px solid rgb(0,0,0,.4);
+                border-radius: 55px;
+                width: 1000px;
+                margin-top: 1rem;
+                padding-left: 1rem;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                padding-right: 1rem;
+            }
+            
+            .gradientBack{
+                background: linear-gradient(150deg,green 35%, blue 90%);
+                width: 1040px;
+                height: 600px;
+                margin-top: 1rem;
+            }
+
+            .backImage{
+                background-image: url(/imagens/LOL.png);
+                margin-top: 1rem;
+                background-repeat: no-repeat;
+                background-size: 1040px;
+                width: 1040px;
+                height: 450px;
+            }
+
+            .backImageRept{
+                background-image: url(/imagens/LOL.png);
+                margin-top: 1rem;
+                background-repeat: repeat;
+                background-size: 520px;
+                width: 1040px;
+                height: 450px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!--Borda Solida Estilizada-->
+        <article class="boxSolid">
+            <img src="../imagens/skyrim-head.png" alt="capacete do jogo skyrim"/>
+        </article>
+        <!--Borda Solida Transparente Estilizada-->
+        <article class="boxSolidTrans">
+            <img src="../imagens/skyrim-head.png" alt="capacete do jogo skyrim"/>
+        </article>
+        <!--Gradiente-->
+        <article>
+            <div class="gradientBack"></div>
+        </article>
+        <!--Imagem unica-->
+        <article>
+            <div class="backImage"></div>
+        </article>
+        <!--Imagem Repetida-->
+        <article>
+            <div class="backImageRept"></div>
+        </article>
+    </body>
+</html>
