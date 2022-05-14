@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Josefin Sans', sans-serif;
+    src: url(../fonts/JosefinSans-VariableFont_wght.ttf);
+}
+
 .centro {
     text-align: center;
     padding: 20px 0px 0px 0px;
@@ -50,6 +55,13 @@ a{
 
 footer{
     margin-top: 15px;
+}
+
+body{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 200;
+    font-size: 1.2rem;
+    text-decoration: none;
 }
 
 a:hover{
