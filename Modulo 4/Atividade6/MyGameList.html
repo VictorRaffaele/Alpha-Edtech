@@ -9,6 +9,10 @@
     <link rel="icon" href="../imagens/icon.jpg" />
     <!--External CSS-->
     <link rel="stylesheet" href="../style set/style.css"/>
+    <!--Link para fonte do Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap" rel="stylesheet">
     <!--Open Graph meta dados-->
     <meta property="og:title" content="My Game List" />
     <meta property="og:url" content="https://github.com/VictorRaffaele/Alpha-Edtech/blob/main/Modulo%203/Atividade6/MyGameList.html" />
@@ -20,10 +24,19 @@
         article > h4{
             color: lightgray;
         }
+
+        .font{
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Ubuntu', sans-serif;  
+        }
+
+        ul{
+            list-style-type: upper-roman;
+        }
     </style>
 </head>
 <!--Inline CSS para alterar cor do backgroud e para melhorar a legibilidade a fonte do texto foi colocada como branco -->
-<body style="background-color:grey; color:white">
+<body class="font" style="background-color:grey; color:white">
     <!-- Cabeçalho da pagina -->
     <header>
         <h1>My Game List</h1>

@@ -1,6 +1,7 @@
+/*Fonte com extensão WOFF2*/
 @font-face {
     font-family: 'Josefin Sans', sans-serif;
-    src: url(../fonts/JosefinSans-VariableFont_wght.ttf);
+    src: url(../fonts/JosefinSans-VariableFont_wght.woff2);
 }
 
 .centro {
@@ -64,6 +65,7 @@ body{
     text-decoration: none;
 }
 
+/*hover e active style*/
 a:hover{
     color: blue;
 }
