@@ -4,51 +4,62 @@
     <meta charset="utf-8"/>
     <title>Praticando CSS</title>
     <link rel="stylesheet" href="style sheet/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1 class="headerSummit">VictorR</h1>
-        <nav>
-            <ul>
-                <li class="navClimb">CLIMB</li>
-                <li class="navGear">GEAR</li>
-                <li class="navSchool">SCHOOL</li>
-                <li class="navBlog">BLOG</li>
-            </ul>
-        </nav>
-    </header>
-
     <main>
-        <section class="secMont">
-            <p class="montblanc">MONT BLANC</p>
-            <div class="line"></div>
-            <p class="explore">Explore the climb</p>
+        <header>
+            <h1 id="headerSummit">VictorR</h1>
+            <nav>
+                <p>CLIMB</p>
+                <p>GEAR</p>
+                <p>BLOG</p>
+                <p>SCHOOL</p>
+            </nav>
+        </header>
+        <section id="secMont">
+            <h1 id="montblanc">MONT BLANC</h1>
+            <p id="line"></p>
+            <p id="explore">Explore the climb</p>
         </section>
-        <section class="secInfo">
+        <section id="divInfo">
             <aside>
-                <p style="color: #C5C5C5; font-size: 1vw;">HEIGHT</p>
-                <p>4,808 M</p>
+                <section id="secInfo">
+                    <aside>
+                        <p style=" font-size: 1vw;">HEIGHT</p>
+                        <p>4,808 M</p>
+                    </aside>
+                    <aside>
+                        <p style="color: #C5C5C5; font-size: 1vw;">HUMIDITY</p>
+                        <p>60%</p>
+                    </aside>
+                    <aside>
+                        <p style="color: #C5C5C5; font-size: 1vw;">WIND</p>
+                        <p>9 M/S</p>
+                    </aside>
+                    <aside>
+                        <p style="color: #C5C5C5; font-size: 1vw;">TEMPERATURE</p>
+                        <p>-8 C</p>
+                    </aside>
+                </section>
             </aside>
             <aside>
-                <p style="color: #C5C5C5; font-size: 1vw;">HUMIDITY</p>
-                <p>60%</p>
+                <section id="secLocal">
+                    <p style="letter-spacing: 0.8vw;"><strong>FRANCE  /  ANDES  / EUROPE</strong></p>
+                    <p style="font-size: 1.3vw; text-align: justify; padding-top: 1vh;">
+                        Mont Blanc, meaning "White Mountain", is the highest mountain in the Apls and the highest in Europe west of Russia`s Caucasus peaks. 
+                        It rise 4,808.7 m (15,777 ft) above sea level and is ranked 11th in the world in topographic prominence. 
+                        The mountain stands in a range called the Graian Alps, between the regions og Aostra Valley, and Savoine and Houte-Savoie, France.
+                    </p>
+                </section>
             </aside>
-            <aside>
-                <p style="color: #C5C5C5; font-size: 1vw;">WIND</p>
-                <p>9 M/S</p>
-            </aside>
-            <aside>
-                <p style="color: #C5C5C5; font-size: 1vw;">TEMPERATURE</p>
-                <p>-8 C</p>
-            </aside>
-        </section>
-        <section class="secLocal">
-            <p style="letter-spacing: 0.8vw;">FRANCE  /  ANDES  / EUROPE</p>
-            <p style="font-size: 1.3vw; text-align: justify; padding-top: 1vh;">
-                Mont Blanc, meaning "White Mountain", is the highest mountain in the Apls and the highest in Europe west of Russia`s Caucasus peaks. 
-                It rise 4,808.7 m (15,777 ft) above sea level and is ranked 11th in the world in topographic prominence. 
-                The mountain stands in a range called the Graian Alps, between the regions og Aostra Valley, and Savoine and Houte-Savoie, France.
-            </p>
         </section>
     </main>
     
