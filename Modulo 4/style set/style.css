@@ -4,6 +4,17 @@
     src: url(../fonts/JosefinSans-VariableFont_wght.woff2);
 }
 
+body{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 200;
+    font-size: 1.2rem;
+    text-decoration: none;
+    /*Cor utilizando Hexadecimal*/
+    background-color: #808080;
+    /*Cor utilizando Hexadecimal com transparência*/
+    color: #ffffffff;
+}
+
 .centro {
     text-align: center;
     padding: 20px 0px 0px 0px;
@@ -11,6 +22,7 @@
 
 article {
     width: 90%;
+    /*Cor utilizando RGB*/
     border: 1px solid lightgray;
     text-align: justify;
     padding: 7px;
@@ -51,27 +63,19 @@ table{
 }
 
 a{
-    color: white;
-}
-
-footer{
-    margin-top: 15px;
-}
-
-body{
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 200;
-    font-size: 1.2rem;
-    text-decoration: none;
+    /*Cor utilizando RGBA*/
+    color: rgba(255, 255, 255, 0.9);
 }
 
 /*hover e active style*/
 a:hover{
-    color: blue;
+    /*Cor utilizando HSL*/
+    color: hsl(240, 100%, 30%);
 }
 
 a:active{
-    color: red;
+    /*Cor utilizando HSLA*/
+    color: hsla(360, 100%, 50%, 1);
 }
 
 .borderPhoto{
@@ -83,4 +87,8 @@ a:active{
     width: 70px;
     height: 70px;
     box-shadow: 6px 4px 6px black;
+}
+
+footer{
+    margin-top: 15px;
 }
