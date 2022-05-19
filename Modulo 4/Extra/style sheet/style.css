@@ -6,29 +6,33 @@
 
 main {
 
+    /*Background Details*/
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.25)), url(../imagens/back.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-clip: padding-box;
     overflow-x: hidden;
 
-    /*Posição*/
+    /*Block Dimension*/
     width: 100vw;
     height: 100vh;
 
-    /*Detalhes da fonte*/
+    /*Font Details*/
     color: #FFFFFF;
     font-style: normal;
     font-weight: 400;
     letter-spacing: 0.1em;
+    font-family: 'Inter', sans-serif;
 
 }
 
 header{
 
-    /*Posição*/
+    /*Block Dimension*/
     height: 13vh;
     width: 100vw;
+
+    /*Display Details*/
     padding: 1vw;
     display: flex;
 
@@ -36,14 +40,15 @@ header{
 
 #headerSummit{
 
-    /*Posição*/
+    /*Block Dimension*/
+    width: 15vw;
+
+    /*Position Details*/
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 15vw;
 
-
-    /*Detalhes da fonte*/
+    /*Font Details*/
     font-size: 2vw;
     line-height: 3rem;
     letter-spacing: 0.15em;
@@ -51,16 +56,17 @@ header{
 }
 
 nav{
-
-    /*Posição*/
-    margin-left: 48vw;
+    
+    /*Block Dimension*/
     width: 35vw;
 
+    /*Position Details*/
+    margin-left: 48vw;
     display: flex;
     align-items: center;
     justify-content: space-around;
 
-    /*Detalhes da fonte*/
+    /*Font Details*/
     font-weight: 600;
     font-size: 0.9vw;
     line-height: 2vw;
@@ -69,11 +75,12 @@ nav{
 }
 
 #secMont{
-
-    /*Posição*/
-    display: inline-block;
+    /*Block Dimension*/
     width: 100vw;
     height: 28vh;
+
+    /*Position Details*/
+    display: inline-block;
     padding: 1vw;
     margin-top: 20vh;
     
@@ -81,12 +88,15 @@ nav{
 
 #montblanc{
 
-    /*Posição*/
-    padding: 2vw;
+    /*Block Dimension*/
     width: 100vw;
+
+    /*Position Details*/
+    padding: 2vw;
     margin-top: 1vh;
     margin-left: 2vw;
-    /*Detalhes da fonte*/
+
+    /*Font Details*/
     font-size: 7vw;
     line-height: 13vh;
     font-weight: 500;
@@ -95,62 +105,74 @@ nav{
 
 #line{
 
-    /*Posição*/
+    /*Block Dimension*/
     width: 8vw;
     height: 0vh;
-    margin-left: 4vw;
-    /*Linha*/
+    /*Line Dimension*/
     border: 1px solid #FFFFFF;
     background-color: #FFFFFF;
+
+    /*Position Details*/
+    margin-left: 4vw;
 
 }
 
 #explore{
 
-    /*Posição*/
-    padding: vw;
+    /*Block Dimension*/
     width: 20vw;
+
+    /*Position Details*/
     margin-left: 14vw;
 
-    /*Detalhes da fonte*/
+    /*Font Details*/
     font-size: 1.8vw;
 
 }
 
 #divInfo{
 
+    /*Position Details*/
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 #secInfo{
 
-    /*Posição*/
+    /*Block Dimension*/
     width: 50vw;
+
+    /*Position Details*/
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin-left: 3vw;
-    margin-top: 8vw;
+    margin-top: 7vw;
 
-    /*Detalhes da fonte*/
-    font-size: 1.5vw;
+    /*Font Details*/
+    font-size: 1vw;
     letter-spacing: 0.2vw;
-    line-height: 6vh;
+    line-height: 4vh;
 
 }
 
 aside::first-line{
+
+    /*Font Color*/
     color: #C5C5C5;
+
 }
 
 #secLocal{
 
-    /*Posição*/
+    /*Position Details*/
     display: inline-block;
     margin-top: 6vh;
     padding: 2vw;
+
+    /*Font Detail*/
     font-size: 1.5vw;
 
 }
