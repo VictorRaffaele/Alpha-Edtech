@@ -9,6 +9,8 @@
 body{
 
     overflow-x: hidden;
+
+    /*Font Details*/
     font-size: 1.1vw;
     line-height: 4vh;
     font-family: 'Inter', sans-serif;
@@ -17,12 +19,14 @@ body{
 
 section{
 
+    /*Section Default Display*/
     display: flex;
 
 }
 
 aside{
 
+    /*Aside Default Details*/
     width: 78vw;
     padding: 2vw;
 
@@ -30,6 +34,7 @@ aside{
 
 #secProfile{
 
+    /*Section Size*/
     width: 100vw;
     height: 60vh;
 
@@ -37,12 +42,15 @@ aside{
 
 #secPhoto{
 
+    /*Section Size*/
     width: 22vw;
 
+    /*Position Details*/
     display: flex;
     justify-content: center;
     align-items: center;
 
+    /*Background Color*/
     background-color: rgb(233, 233, 233);
 
 
@@ -50,14 +58,17 @@ aside{
 
 img{
 
+    /*Image Size*/
     max-width: 100%;
 
 }
 
 #CVPhoto{
 
+    /*Photo Size*/
     width: 15vw;
 
+    /*Border Details*/
     border: 0px solid;
     border-radius: 100px;
 
@@ -65,8 +76,10 @@ img{
 
 #secInfo{
 
+    /*Section Size*/
     width: 78vw;
     
+    /*Position Details*/
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -75,20 +88,26 @@ img{
 
 #secName{
 
+    /*Section Size*/    
     width: 60vw;
     height: 20vh;
 
+    /*Position Details*/
     justify-content: space-between;
-
 
 }
 
 
 #artName{
 
+    /*Article Size*/
     width: 28vw;
     height: 18vh;
 
+    /*Font Details*/
+    line-height: 5.5vh;
+
+    /*Position Details*/
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -97,12 +116,14 @@ img{
 
 article h1{
 
+    /*Font Details*/
     font-size: 3vw;
 
 }
 
 article h2{
 
+    /*Font Details*/
     color: grey;
     font-size: 1.3vw;
     font-weight: 500;
@@ -111,37 +132,45 @@ article h2{
 
 #asideSocial{
 
-    width: 5vw;
+    /*Aside Size*/
+    width: 4vw;
     height: 18vh;
 
+    /*Position Details*/
+    column-gap: 0.5vw;
     padding: 0;
     display: flex;
     align-items: flex-end;
-    justify-content: space-between;
 
 }
 
 #line{
 
+    /*Line Size*/
     width: 60vw;
     height: 1vh;
     
+    /*Position Details*/
     margin-top: 12vh;
     margin-bottom: 2vh;
 
+    /*Shadow Detail*/
     box-shadow: 1px 1px 1px rgb(148, 148, 148);
 
 }
 
 #secContact{
 
+    /*Section Size*/
     width: 60vw;
 
+    /*Position Details*/
     justify-content: space-around;
 }
 
 .asideContact{
 
+    /*Aside Size*/
     width: 20vw;
     height: 8vh;
 
@@ -149,6 +178,7 @@ article h2{
 
 .secData{
 
+    /*Section Size*/
     width: 100vw;
     height: auto;
 
@@ -156,18 +186,22 @@ article h2{
 
 .artSide{
 
+    /*Article Size*/
     width: 22vw;
-    padding: 3vw;
 
+    /*Position Details*/
+    padding: 3vw;
     display: flex;
     justify-content: flex-end;
 
+    /*Background Details*/
     background-color: rgb(243, 243, 243);
 
 }
 
 .asideInfo{
 
+    /*Position Details*/
     padding: 3vw;
     display: flex;
     justify-content: space-around;
@@ -176,6 +210,7 @@ article h2{
 
 .asideEXP{
 
+    /*Aside Size*/
     width: 34vw;
 
 }
