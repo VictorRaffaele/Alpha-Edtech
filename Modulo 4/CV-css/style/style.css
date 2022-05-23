@@ -1,0 +1,181 @@
+*{
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+
+    overflow-x: hidden;
+    font-size: 1.1vw;
+    line-height: 4vh;
+    font-family: 'Inter', sans-serif;
+
+}
+
+section{
+
+    display: flex;
+
+}
+
+aside{
+
+    width: 78vw;
+    padding: 2vw;
+
+}
+
+#secProfile{
+
+    width: 100vw;
+    height: 60vh;
+
+}
+
+#secPhoto{
+
+    width: 22vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(233, 233, 233);
+
+
+}
+
+img{
+
+    max-width: 100%;
+
+}
+
+#CVPhoto{
+
+    width: 15vw;
+
+    border: 0px solid;
+    border-radius: 100px;
+
+}
+
+#secInfo{
+
+    width: 78vw;
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#secName{
+
+    width: 60vw;
+    height: 20vh;
+
+    justify-content: space-between;
+
+
+}
+
+
+#artName{
+
+    width: 28vw;
+    height: 18vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+article h1{
+
+    font-size: 3vw;
+
+}
+
+article h2{
+
+    color: grey;
+    font-size: 1.3vw;
+    font-weight: 500;
+
+}
+
+#asideSocial{
+
+    width: 5vw;
+    height: 18vh;
+
+    padding: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+}
+
+#line{
+
+    width: 60vw;
+    height: 1vh;
+    
+    margin-top: 12vh;
+    margin-bottom: 2vh;
+
+    box-shadow: 1px 1px 1px rgb(148, 148, 148);
+
+}
+
+#secContact{
+
+    width: 60vw;
+
+    justify-content: space-around;
+}
+
+.asideContact{
+
+    width: 20vw;
+    height: 8vh;
+
+}
+
+.secData{
+
+    width: 100vw;
+    height: auto;
+
+}
+
+.artSide{
+
+    width: 22vw;
+    padding: 3vw;
+
+    display: flex;
+    justify-content: flex-end;
+
+    background-color: rgb(243, 243, 243);
+
+}
+
+.asideInfo{
+
+    padding: 3vw;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.asideEXP{
+
+    width: 34vw;
+
+}
