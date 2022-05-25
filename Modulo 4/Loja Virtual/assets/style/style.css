@@ -246,6 +246,12 @@ nav a:hover{
 
 }
 
+img:hover{
+
+    zoom: 1.5;
+
+}
+
 .tag{
 
     width: 9vw;
