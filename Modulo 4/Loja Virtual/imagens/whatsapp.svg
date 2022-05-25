@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+	<title>whatsapp</title>
+	<defs>
+		<image  width="30" height="30" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAAAXNSR0IB2cksfwAAADNQTFRF////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8YBMDAAAABF0Uk5TADBAcIBQEKDw/9DAsJDgIGBf61VTAAABG0lEQVR4nG1TWxaFIAjMt6Sp+1/t5aGGp8tHBQM4jHRdyox1Pth4/TObMojd7pNhCijL/kQ9BavDxiY8jTp0hSYMpDcwMCEbjWarm8Wk8HHk7opbCPb8RRn368PhK5Tn6N8gU3kEKDQ2shsaH1I+JFxB0l5r0CRODsuih70e9m8poup8iInH4bSTIZ4B4WgeGVkDoFIH9Yks+ENdkAxVPD9xl0Qkw25h/lMfKNbR0wgby0Vd4WJ+T4w90lZqLQxWd5BTbyVHdLQLzUorvuQAi5wwcrxqdmls1mjaTOYTtrZf1F1Trht9rzeCJJh8sXdNRChNyTvTWwI/ar9LSYUwaPt2mvwYob5Zze+bpd6DvT5SIfN6p+34/8uJ/QC0UA0/iyzRuwAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="1" y="1"/>
+</svg>
