@@ -1,21 +1,24 @@
 header{
 
+    /*Dimension Details*/
     width: 100vw;
     height: 15vh;
 
+    /*Organization Details*/
     position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding-left: 4vw;
 
+    /*Background Details*/
     background-color: rgb(254, 247, 237);
 
 }
 
 header h1{
 
+    /*Font Details*/
     color: rgb(58, 84, 180);
     font-size: 1.5rem;
     font-weight: 900;
@@ -24,6 +27,7 @@ header h1{
 
 header a{
 
+    /*Font Details*/
     color: rgb(58,84,180);
     text-decoration: none;
 

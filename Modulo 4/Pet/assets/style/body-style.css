@@ -8,6 +8,7 @@
 
 body{
 
+    /*Font Details*/
     font-family: 'Work Sans', sans-serif;
     font-size: 1rem;
     color: rgb(58,84,180);
@@ -17,12 +18,14 @@ body{
 
 section{
 
+    /*Organization Details*/
     display: flex;
 
 }
 
 article{
 
+    /*Organization Details*/
     display: flex;
     flex-direction: column;
 
@@ -30,6 +33,7 @@ article{
 
 aside{
 
+    /*Organization Details*/
     display: flex;
     align-items: center;
 
@@ -37,6 +41,7 @@ aside{
 
 figure{
 
+    /*Organization Details*/
     display: flex;
     align-items: center;
 
@@ -44,19 +49,23 @@ figure{
 
 button{
 
+    /*Dimension Details*/
     width: 14vw;
     min-height: 5vh;
 
+    /*Font Details*/
     color: white;
     font-size: 0.8rem;
     font-weight: 100;
 
+    /*Background Details*/
     background-color: rgb(58,84,180);
 
 }
 
 button:hover{
 
+    /*Background Details*/
     transition: 1s;
     background-color: gray;
 
@@ -64,6 +73,7 @@ button:hover{
 
 img{
 
+    /*Dimension Details*/
     max-width: 100%;
     height: auto;
 
@@ -71,6 +81,7 @@ img{
 
 h3{
 
+    /*Font Details*/
     font-size: 3.5rem;
     font-weight: 900;
 
@@ -78,6 +89,7 @@ h3{
 
 h4{
 
+    /*Font Details*/
     font-size: 1.5rem;
     font-weight: 800;
     line-height: 4rem;

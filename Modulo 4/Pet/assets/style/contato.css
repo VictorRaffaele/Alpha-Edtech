@@ -1,31 +1,38 @@
 #contact{
 
+    /*Dimension Details*/
     width: 100vw;
     height: 80vh;
 
+    /*Organization Details*/
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 
+    /*Font Details*/
     color: white;
     font-size: 0.9rem;
     line-height: 4vh;
     text-align: center;
 
+    /*Background Details*/
     background-color: rgb(58,84,180);
 
 }
 
 .contactDetails{
 
+    /*Dimension Details*/
     width: 15vw;
 
 }
 
 #mensage{
     
+    /*Dimension Details*/
     width: 62vw;
 
+    /*Organization Details*/
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
@@ -34,52 +41,64 @@
 
 .mensageSender{
 
+    /*Dimension Details*/
     width: 30vw;
     height: 5vh;
 
+    /*Font Details*/
     color: white;
 
+    /*Border Details*/
     border: none;
     border-bottom: 1px solid white;
 
+    /*Background Details*/
     background-color: rgb(58,84,180);
 
 }
 
 .mensageSender::placeholder{
 
+    /*Font Details*/
     color: white;
 
 }
 
 .mensageSender:hover{
 
+    /*Font Details*/
     border-color: blue;
 
 }
 
 .mensageSubjetive{
 
+    /*Dimension Details*/
     width: 80vw;
     height: 5vh;
 
+    /*Font Details*/
     color: white;
 
+    /*Border Details*/
     border: none;
     border-bottom: 1px solid white;
 
+    /*Background Details*/
     background-color: rgb(58,84,180);
 
 }
 
 .mensageSubjetive::placeholder{
 
+    /*Font Details*/
     color: white;
 
 }
 
 .mensageSubjetive:hover{
 
+    /*Border Details*/
     border-color: blue;
 
 }
@@ -87,12 +106,14 @@
 
 #subjetive{
 
+    /*Dimension Details*/
     height: 15vh;
 
 }
 
 #sendMensage{
 
+    /*Dimension Details*/
     width: 80vw;
     border: none;
 
@@ -100,22 +121,28 @@
 
 #finalSec{
 
+    /*Dimension Details*/
     width: 75vw;
     height: 14vh;
+
+    /*Organization Details*/
     align-items: center;
 
 }
 
 #social{
 
+    /*Dimension Details*/
     width: 15vw;
 
+    /*Organization Details*/
     justify-content: space-evenly;
 
 }
 
 #contactDog{
 
+    /*Dimension Details*/
     width: 30vw;
 
 }
