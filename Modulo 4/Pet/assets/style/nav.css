@@ -1,0 +1,12 @@
+nav{
+
+    width: 55vw;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    font-size: 0.9rem;
+    font-weight: 200;
+
+}

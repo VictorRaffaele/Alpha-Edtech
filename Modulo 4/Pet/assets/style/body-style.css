@@ -1,0 +1,85 @@
+*{
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+    color: rgb(58,84,180);
+    overflow-x: hidden;
+
+}
+
+section{
+
+    display: flex;
+
+}
+
+article{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+aside{
+
+    display: flex;
+    align-items: center;
+
+}
+
+figure{
+
+    display: flex;
+    align-items: center;
+
+}
+
+button{
+
+    width: 14vw;
+    min-height: 5vh;
+
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 100;
+
+    background-color: rgb(58,84,180);
+
+}
+
+button:hover{
+
+    transition: 1s;
+    background-color: gray;
+
+}
+
+img{
+
+    max-width: 100%;
+    height: auto;
+
+}
+
+h3{
+
+    font-size: 3.5rem;
+    font-weight: 900;
+
+}
+
+h4{
+
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 4rem;
+
+}
