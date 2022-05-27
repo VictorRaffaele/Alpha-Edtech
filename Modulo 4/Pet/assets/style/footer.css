@@ -1,19 +1,24 @@
 footer{
 
+    /*Dimension Details*/
     height: 7vh;
 
+    /*Organization Details*/
     display: flex;
     justify-content: center;
     align-items: center;
 
+    /*Font Details*/
     font-size: 0.8rem;
 
+    /*Background Details*/
     background-color: rgb(254,247,237);
 
 }
 
 footer a{
 
+    /*Font Details*/
     color: black;
 
 }

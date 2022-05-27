@@ -1,11 +1,14 @@
 nav{
 
+    /*Dimension Details*/
     width: 55vw;
 
+    /*Organization Details*/
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 
+    /*Font Details*/
     font-size: 0.9rem;
     font-weight: 200;
 
