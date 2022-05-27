@@ -1,0 +1,29 @@
+#articleChat{
+
+    width: 100vw;
+    height: 8vh;
+    z-index: 1;
+
+    position: fixed;
+    flex-direction: row;
+    margin-top: 87vh;
+    padding-right: 2.5vw;
+
+    justify-content: flex-end;
+
+}
+
+#buttonChat{
+
+    width: 21vw;
+    height: 8vh;
+
+    background-color: rgb(58,84,180);
+    border: 1px solid lightgray;
+    border-radius: 10px;
+
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+
+}

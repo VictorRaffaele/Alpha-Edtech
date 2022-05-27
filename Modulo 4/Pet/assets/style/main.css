@@ -1,0 +1,105 @@
+.mainSec{
+
+    width: 100vw;
+    height: 100vh;
+
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+#intro{
+
+    background-color: rgb(254, 247, 237);
+
+}
+
+#artIntro{
+
+    width: 40vw;
+    height: 60vh;
+
+    justify-content: space-around;
+
+}
+
+#artIntro h1{
+
+    font-size: 9rem;
+    line-height: 8rem;
+    font-weight: 900;
+
+}
+
+#artIntro h2{
+
+    font-size: 2rem;
+    font-weight: 100;
+
+}
+
+.imgRadius{
+
+    border: 1px solid transparent;
+    border-radius: 300px;
+
+}
+
+#artAbout{
+
+    width: 35vw;
+    height: 50vh;
+    line-height: 1.5rem;
+
+    justify-content: space-evenly;
+
+}
+
+.titleSec{
+
+    width: 100vw;
+    text-align: center;
+
+}
+
+.services{
+
+    width: 21vw;
+    height: 80vh;
+
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    line-height: 1.6rem;
+    font-size: 0.9rem;
+    font-weight: 100;
+    text-align: center;
+}
+
+.figureWork{
+
+    width: 30vw;
+    justify-content: center;
+
+}
+
+#wrap{
+
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+
+#feedbackSec{
+
+    height: 72vh;
+
+}
+
+.feedbackComment{
+
+    height: 45vh;
+
+}

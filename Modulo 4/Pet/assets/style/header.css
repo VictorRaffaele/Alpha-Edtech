@@ -1,0 +1,30 @@
+header{
+
+    width: 100vw;
+    height: 15vh;
+
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-left: 4vw;
+
+    background-color: rgb(254, 247, 237);
+
+}
+
+header h1{
+
+    color: rgb(58, 84, 180);
+    font-size: 1.5rem;
+    font-weight: 900;
+
+}
+
+header a{
+
+    color: rgb(58,84,180);
+    text-decoration: none;
+
+}

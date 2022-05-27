@@ -1,0 +1,19 @@
+footer{
+
+    height: 7vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 0.8rem;
+
+    background-color: rgb(254,247,237);
+
+}
+
+footer a{
+
+    color: black;
+
+}
