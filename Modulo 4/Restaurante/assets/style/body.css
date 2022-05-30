@@ -1,0 +1,187 @@
+*{
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+
+    overflow-x: hidden;
+
+    /*Font Details*/
+    font-family: 'Enriqueta', serif;
+    color: rgb(81, 44, 29);
+    line-height: 1.7em;
+
+}
+
+section{
+
+    /*Position Details*/
+    display: flex;
+
+}
+
+article{
+
+    /*Size Details*/
+    width: 25vw;
+
+    /*Position Details*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+aside{
+
+    /*Size Details*/
+    width: 20vw;
+
+    /*Position Details*/
+    display: flex;
+    justify-content: space-between;
+
+}
+
+figure{
+
+    /*Position Details*/
+    display: flex;
+
+}
+
+
+img{
+
+    /*Size Details*/
+    max-width: 100;
+
+}
+
+/*Font Details*/
+h1{
+
+    font-family: 'Sacramento', cursive;
+    color: white;
+    font-size: 3rem;
+    font-weight: 400;
+
+}
+
+h2{
+
+    font-family: 'Playfair Display', serif;
+    color: white;
+    font-size: 6rem;
+    font-weight: 900;
+    line-height: 5.8rem;
+
+}
+
+h3{
+
+    font-family: 'Sacramento', cursive;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1em;
+
+}
+
+h4{
+
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    line-height: 1.2em;
+    letter-spacing: 2px;
+
+}
+
+h5{
+
+    color: white;
+    
+}
+
+a{
+
+    text-decoration: none;
+
+}
+
+/*IDs*/
+#secCarousel{
+
+    /*Size Details*/
+    width: 100vw;
+    height: 69vh;
+    overflow: hidden;
+
+    /*Position Details*/
+    justify-content: center;
+
+}
+
+#artLogo{
+
+    /*Size Details*/
+    width: 50vw;
+    height: 60vh;
+    z-index: 1;
+
+    /*Position Details*/
+    position: absolute;
+
+}
+
+#secCarousel #fotos{
+
+    /*Size Details*/
+    width: 100vw;
+
+    /*Animation Details*/
+    animation-name: carousel;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+
+}
+
+#secCarousel #fotos img{
+
+    /*Size Details*/
+    width: 100%;
+
+}
+
+#secRolling{
+
+    /*Size Details*/
+    width: 100vw;
+    height: 80vh;
+    z-index: -1;
+
+    /*Position Details*/
+    position: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    /*Background Details*/
+    background-image: url(../imagens/rolling.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+/*Class*/
+.secBottom{
+
+    /*Size Details*/
+    width: 55vw;
+
+    /*Position Details*/
+    justify-content: space-between;
+
+}

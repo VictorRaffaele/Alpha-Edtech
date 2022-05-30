@@ -1,0 +1,28 @@
+nav{
+
+    /*Position Details*/
+    display: flex;
+    align-items: flex-end;
+
+}
+
+/*IDs*/
+#title{
+
+    /*Size Details*/
+    width: 40vh;
+    height: 5vh;
+
+}
+
+#artFooter{
+
+    /*Size Details*/
+    width: 100vh;
+    height: 2vh;
+
+    /*Font Details*/
+    font-size: 0.8rem;
+    line-height: 1rem;
+
+}

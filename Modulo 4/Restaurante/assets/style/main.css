@@ -1,0 +1,31 @@
+main{
+
+    /*Size Details*/
+    width: 100vw;
+    height: 330vh;
+
+    /*Position Details*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.mainSec{
+
+    /*Size Details*/
+    width: 68vw;
+
+    /*Position Details*/
+    justify-content: space-around;
+
+}
+
+.secSubTitles{
+
+    /*Position Details*/
+    flex-direction: column;
+    
+}
+
