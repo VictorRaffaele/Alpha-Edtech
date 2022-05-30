@@ -1,0 +1,22 @@
+nav{
+
+    display: flex;
+    align-items: flex-end;
+
+}
+
+#title{
+
+    width: 40vh;
+    height: 5vh;
+
+}
+
+#artFooter{
+
+    width: 100vh;
+    height: 2vh;
+
+    font-size: 0.8rem;
+    line-height: 1rem;
+}
