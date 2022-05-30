@@ -1,0 +1,61 @@
+footer{
+
+    width: 100vw;
+    height: 25vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 17vh;
+
+    margin-bottom: 1px solid white;
+
+    background-color: rgb(45,25,16);
+
+}
+
+input{
+
+    width: 32vw;
+    height: 4vh;
+
+    font-family: 'Playfair Display', serif;
+    color: white;
+
+    border: solid 2px white;
+
+    background-color: rgb(45,25,16);
+
+}
+
+input::placeholder{
+
+    padding-left: 1vw;
+
+    color: gray;
+    font-size: 1rem;
+    letter-spacing: 1px;
+
+}
+
+#mailList{
+
+    width: 30vw;
+    height: 15vh;
+
+    justify-content: space-around;
+
+    font-size: 1.3rem;
+    font-weight: 100;
+
+}
+
+#figSocial{
+
+    width: 7vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}

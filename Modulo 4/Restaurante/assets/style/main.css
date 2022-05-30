@@ -1,0 +1,35 @@
+main{
+
+    width: 100vw;
+    height: 330vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#artLogo{
+
+    width: 50vw;
+    height: 60vh;
+
+    justify-content: center;
+
+}
+
+.mainSec{
+
+    width: 68vw;
+
+    justify-content: space-around;
+
+}
+
+.secSubTitles{
+
+    flex-direction: column;
+    
+}
+
