@@ -28,6 +28,32 @@ input{
 
 }
 
+button{
+
+    width: 32vw;
+    height: 4vh;
+
+    font-family: 'Playfair Display', serif;
+    color: white;
+
+    border: solid 2px white;
+
+    background-color: rgb(45,25,16);
+
+}
+
+button:hover{
+
+    background-color: rgb(104, 77, 64);
+
+}
+
+button:active{
+
+    background-color: lightgray;
+
+}
+
 input::placeholder{
 
     padding-left: 1vw;

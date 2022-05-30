@@ -6,10 +6,11 @@
     <title>Barista</title>
     <!--Link CSS-->
     <link rel="stylesheet" href="./assets/style/body.css"/>
-    <link rel="stylesheet" href="./assets/style/main.css"/>
-    <link rel="stylesheet" href="./assets/style/footer.css"/>
+    <link rel="stylesheet" href="./assets/style/animation.css">
     <link rel="stylesheet" href="./assets/style/header.css">
     <link rel="stylesheet" href="./assets/style/nav.css">
+    <link rel="stylesheet" href="./assets/style/main.css"/>
+    <link rel="stylesheet" href="./assets/style/footer.css"/>
     <!--Link Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,8 +21,10 @@
         <!--Nav Bar-->
         <nav class="secBottom">
             <article id="title">
-                <h1>BARISTA</h1>
-                <h2>CASA DE CAFÉ ESPECIALIZADA</h2>
+                <a href="#secCarousel">
+                    <h1>BARISTA</h1>
+                    <h2>CASA DE CAFÉ ESPECIALIZADA</h2>
+                </a>
             </article>
             <aside>
                 <a href="">
@@ -58,6 +61,13 @@
                 Local
             </h2>
         </article>
+        <!--Carousel Photo-->
+        <figure id="fotos">
+            <img src="./assets/imagens/carousel-coffe1.webp" alt="">
+            <img src="./assets/imagens/coffe-cup.webp" alt="">
+            <img src="./assets/imagens/coffe-milk.webp" alt="">
+            <img src="./assets/imagens/carousel-coffe1.webp" alt="">
+        </figure>
     </section>
     <main>
         <!--About Section-->
@@ -144,8 +154,8 @@
             <!--Mail List-->
             <article id="mailList">
                 <h5>Faça parte da nossa lista de emails</h5>
-                <input type="email" name="email" id="email" placeholder="Insira seu email aqui*"">
-                <input type="button" value="Participar" id="addEmail">
+                <input type="email" name="email" id="email" placeholder="Insira seu email aqui*">
+                <button>Participar</button>
             </article>
             <!--Social Medias-->
             <figure id="figSocial">

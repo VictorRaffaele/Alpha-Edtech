@@ -1,8 +1,10 @@
 header{
 
+    /*Size Details*/
     width: 100vw;
     height: 17vh;
 
+    /*Position Details*/
     position: fixed;
     top: 83vh;
     display: flex;
@@ -10,10 +12,12 @@ header{
     align-items: center;
     justify-content: space-evenly;
 
+    /*Background Details*/
     background-color: rgb(249, 245, 246);
 
 }
 
+/*Font Details*/
 header h1{
 
     font-family: 'Enriqueta', serif;
@@ -30,14 +34,18 @@ header h2{
     color: rgb(81, 44, 29);
     font-size: 1rem;
     font-weight: 400;
-    line-height: 2.5rem;
+    line-height: 1.7rem;
     letter-spacing: 2px;
 
 }
 
+/*IDs*/
 #line{
 
+    /*Size Details*/
     width: 100vw;
+
+    /*Border Detail*/
     border-bottom: 1px solid lightgray;
 
 }

@@ -1,0 +1,12 @@
+@keyframes carousel{
+
+    0%{ margin-left: 0vw;}
+    20%{margin-left: 0vw;}
+    25%{margin-left: -200vw;}
+    45%{margin-left: -200vw;}
+    50%{margin-left: -400vw;}
+    75%{margin-left: -400vw;}
+    80%{margin-left: -600vw;}
+    100%{margin-left: -600vw;}
+
+}
