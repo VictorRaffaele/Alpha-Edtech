@@ -1,0 +1,76 @@
+*{
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+
+    /*Dimension Details*/
+    width: 100vw;
+    height: 100vh;
+    padding-bottom: 2vh;
+
+    /*Display Details*/
+    display: flex;
+    align-items: flex-end;
+
+    /*Font Detail*/
+    font-family: 'Roboto', sans-serif;
+
+    /*Background Details*/
+    background-image: url(../imagens/mundo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+
+    /*Dimension Details*/
+    min-width: 14vw;
+    min-height: 6vh;
+
+    /*Display Details*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*Background Details*/
+    background-color: white;
+    border-radius: 10px;
+
+
+}
+
+#ola{
+
+    /*Dimension Details*/
+    width: 80vw;
+    height: 50vh;
+    
+    /*Display Details*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#btOla{
+
+    /*Dimension Details*/
+    min-width: 12vw;
+    min-height: 6vh;
+
+    /*Font Detail*/
+    font-weight: 700;
+
+    /*Background Details*/
+    background-color: white;
+    border-radius: 10px;
+
+}
+
