@@ -15,7 +15,7 @@ body{
 
 form{
 
-    width: 50vw;
+    width: 42vw;
     height: 17vh;
 
     display: flex;
@@ -26,7 +26,7 @@ form{
 
 input{
 
-    width: 6vw;
+    width: 8vw;
     height: 4.5vh;
 
     text-align: center;
@@ -36,7 +36,7 @@ input{
 
 #btCompare{
 
-    width: 8vw;
+    width: 6vw;
     height: 5vh;
 
     font-size: 1rem;
