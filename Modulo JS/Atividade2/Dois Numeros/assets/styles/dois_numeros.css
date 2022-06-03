@@ -1,0 +1,63 @@
+*{
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+
+    display: flex;
+    justify-content: center;
+
+}
+
+form{
+
+    width: 50vw;
+    height: 17vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+}
+
+input{
+
+    width: 6vw;
+    height: 4.5vh;
+
+    text-align: center;
+    font-size: 1rem;
+
+}
+
+#btCompare{
+
+    width: 8vw;
+    height: 5vh;
+
+    font-size: 1rem;
+    background-color: #231f20;
+    color: white;
+
+}
+
+#secCompare{
+
+    width: 70vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../imagens/Compare.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
