@@ -1,0 +1,18 @@
+input{
+
+    width: 7vw;
+    height: 4.5vh;
+
+    text-align: center;
+    font-size: 1rem;
+
+}
+
+#backNum{
+
+    background-image: url(../imagens/Compare.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
