@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Compare Dois Números</title>
+        <meta charset="utf-8">
+        <!--Link CSS-->
+        <link rel="stylesheet" href="./assets/styles/compare.css">
+        <link rel="stylesheet" href="./assets/styles/expectativa.css">
+    </head>
+    <body>
+        <!--Page's Header-->
+        <header>
+            <h1>Descubra sua expectativa de vida:</h1>
+            <!--Nav Bar-->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./dois_numeros.html">Compare Dois Numeros!</a>
+                    </li>
+                    <li>
+                        <a href="./duas_strings.html">Compare o Tamanho de Duas String!</a>
+                    </li>
+                    <li>
+                        <a href="./expectativa.html">Quantidade de Dias que me Restam!</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!--Compare Section-->
+        <section class="secCompare" id="backExp">
+            <form action="compare" method="get" id="verif_date">
+                <input type="date" name="date" id="entry-date">
+                <ul id="gender">
+                    <li>
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Homens</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">Mulher</label>
+                    </li>
+                </ul>
+                <input type="submit" value="Verificar" class="btCompare">
+            </form>
+        </section>
+        <!--Script JS-->
+        <script src="./assets/scripts/expectativa.js" defer></script>
+    </body>
+</html>
