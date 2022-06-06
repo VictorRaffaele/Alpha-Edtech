@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Calculadora</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+        <!--Link CSS-->
+        <link rel="stylesheet" href="./assets/styles/index.css">
+    </head>
+    <body>
+        <header>
+            <h1>Calculadora</h1>
+        </header>
+        <fieldset>
+            <form action="calc" method="get" id="calc">
+                <input type="float" name="operando1" id="operando1">
+                <input type="float" name="operando2" id="operando2">
+                <select name="operador" id="operador">
+                    <option value="soma">Soma</option>
+                    <option value="subtração">Subtração</option>
+                    <option value="multiplicação">Multiplicação</option>
+                    <option value="divisão">Divisão</option>
+                </select>
+            </form>
+            <button id="calcular">Calcular</button>
+        </fieldset>
+        <script src="./assets/scripts/index.js"></script>
+    </body>
+</html>
