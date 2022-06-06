@@ -1,0 +1,31 @@
+input{
+
+    height: 4vh;
+
+}
+
+#backExp{
+
+    background-image: url(../imagens/lapide.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+
+
+#verif_date{
+
+    width: 4vw;
+    height: 40vh;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+#gender{
+
+    width: 10vw;  
+    
+}
