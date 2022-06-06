@@ -10,19 +10,27 @@
         <header>
             <h1>Calculadora</h1>
         </header>
+        <!--Form-->
         <fieldset>
             <form action="calc" method="get" id="calc">
-                <input type="float" name="operando1" id="operando1">
-                <input type="float" name="operando2" id="operando2">
+                <!--Entrys-->
+                <label for="operando1">Operador 1:</label>
+                <input type="float" name="operando1" id="operando1"/>
+                <label for="operando2">Operador 2:</label>
+                <input type="float" name="operando2" id="operando2"/>
+                <!--HTML Select-->
+                <label for="operador">Operação:</label>
                 <select name="operador" id="operador">
-                    <option value="soma">Soma</option>
+                    <option selected value="soma">Soma</option>
                     <option value="subtração">Subtração</option>
                     <option value="multiplicação">Multiplicação</option>
                     <option value="divisão">Divisão</option>
                 </select>
+                <p>Resultado: <span id="resultado"></span></p>
+                <button id="calcular">Calcular</button>
             </form>
-            <button id="calcular">Calcular</button>
         </fieldset>
+        <!--Script JS-->
         <script src="./assets/scripts/index.js"></script>
     </body>
 </html>
