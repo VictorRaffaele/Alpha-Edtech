@@ -5,30 +5,42 @@
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
         <!--Link CSS-->
         <link rel="stylesheet" href="./assets/styles/index.css">
+        <!--Link Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-            <h1>Calculadora</h1>
+            <section id="titleH1">
+                <h1>Calculadora</h1>
+            </section>
         </header>
         <!--Form-->
         <fieldset>
             <form action="calc" method="get" id="calc">
                 <!--Entrys-->
-                <label for="operando1">Operador 1:</label>
-                <input type="float" name="operando1" id="operando1"/>
-                <label for="operando2">Operador 2:</label>
-                <input type="float" name="operando2" id="operando2"/>
+                <article class="artOperator">
+                    <label for="operando1">Operador 1:</label>
+                    <input type="float" name="operando1" id="operando1"/>
+                </article>
+                <article>
+                    <label for="operando2">Operador 2:</label>
+                    <input type="float" name="operando2" id="operando2"/>
+                </article>
                 <!--HTML Select-->
-                <label for="operador">Operação:</label>
-                <select name="operador" id="operador">
-                    <option selected value="soma">Soma</option>
-                    <option value="subtração">Subtração</option>
-                    <option value="multiplicação">Multiplicação</option>
-                    <option value="divisão">Divisão</option>
-                </select>
+                <article>
+                    <label for="operador">Operação:</label>
+                    <select name="operador" id="operador">
+                        <option selected value="soma">Soma</option>
+                        <option value="subtração">Subtração</option>
+                        <option value="multiplicação">Multiplicação</option>
+                        <option value="divisão">Divisão</option>
+                    </select>
+                </article>
                 <p>Resultado: <span id="resultado"></span></p>
-                <button id="calcular">Calcular</button>
             </form>
+            <button id="calcular">Calcular</button>
         </fieldset>
         <!--Script JS-->
         <script src="./assets/scripts/index.js"></script>
