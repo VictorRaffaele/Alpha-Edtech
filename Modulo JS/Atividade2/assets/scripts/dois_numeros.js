@@ -5,9 +5,9 @@ formComp.addEventListener("submit", function(compare){
     compare.preventDefault();
 
     const idNum1 = document.querySelector("#num1");
-    const num1 = idNum1.value;
+    const num1 = Number(idNum1.value);
     const idNum2 = document.querySelector("#num2");
-    const num2 = idNum2.value;
+    const num2 = Number(idNum2.value);
 
     if(num1 && num2 != null && num2 && num1 != null){
         if(num1 > num2){
