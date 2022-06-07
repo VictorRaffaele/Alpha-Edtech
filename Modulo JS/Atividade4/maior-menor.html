@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <title>Número Aleatório</title>
+        <title>Menor e Maior Número Inteiro</title>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <!--Link CSS-->
         <!--Link Google Fonts-->
@@ -11,7 +11,7 @@
     </head>
     <body>
         <header>
-            <h1>Sorteie um numero entre X e Y</h1>
+            <h1>Verifique o Maior e o Menor Numero Inteiro</h1>
             <nav>
                 <ul>
                     <li><a href="./imc.html">Calcular IMC</a></li>
@@ -22,20 +22,17 @@
             </nav>
         </header>
         <fieldset>
-            <form method="get" id="formSort">
+            <form method="get" id="formMaiorMenor">
                 <article>
-                    <label for="minimo">Valor mínimo: </label>
-                    <input type="number" placeholder="Digite o valor mínimo" name="minimo" id="minimo"/>
+                    <label for="numEntry">Número não inteiro: </label>
+                    <input type="number" placeholder="Digite um número" name="numEntry" id="numEntry"/>
                 </article>
-                <article>
-                    <label for="maximo">Valor máximo: </label>
-                    <input type="number" placeholder="Digite o valor máximo" name="maximo" id="maximo">
-                </article>
-                <p id="textResult">Valor sorteado: </p>
-                <input type="button" value="Sortear" id="sorteio">
+                <p id="textMenor">Menor número inteiro: </p>
+                <p id="textMaior">Maior número inteiro: </p>
+                <input type="button" value="Verificar" id="verificar">
             </form>
         </fieldset>
         <!--Script JS-->
-        <script src="./assets/scripts/random.js" defer></script>
+        <script src="./assets/scripts/maior-menor.js" defer></script>
     </body>
 </html>
