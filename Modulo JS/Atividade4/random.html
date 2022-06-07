@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Número Aleatório</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <!--Link CSS-->
+        <!--Link Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Sorteie um numero entre X e Y</h1>
+            <nav>
+                <ul>
+                    <li><a href="./imc.html">Calcular IMC</a></li>
+                    <li><a href="./random.html">Número Aleatório</a></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </nav>
+        </header>
+        <fieldset>
+            <form method="get" id="formSort">
+                <article>
+                    <label for="minimo">Valor mínimo: </label>
+                    <input type="number" placeholder="Digite o valor mínimo" name="minimo" id="minimo"/>
+                </article>
+                <article>
+                    <label for="maximo">Valor máximo: </label>
+                    <input type="number" placeholder="Digite o valor máximo" name="maximo" id="maximo">
+                </article>
+                <p id="textResult"></p>
+                <input type="button" value="Sortear" id="sorteio">
+            </form>
+        </fieldset>
+        <!--Script JS-->
+        <script src="./assets/scripts/imc.js" defer></script>
+    </body>
+</html>
