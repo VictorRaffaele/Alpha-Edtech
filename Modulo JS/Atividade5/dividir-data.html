@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Switch Numbers</title>
+        <title>Dividir Data</title>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
         <!--Link CSS-->
         <link rel="stylesheet" href="./assets/styles/body.css">
@@ -24,14 +24,19 @@
             </nav>
         </header>
         <fieldset>
-            <form method="get" id="formSwitch">
-                <label for="entryNum">Digite um número de 0 a 10: </label>
-                <input type="number" max="10" min="0" name="entryNum" id="entryNum"/>
-                <p>Forma textual: <span id="textual"></span></p>
-                <input type="button" value="Exibir" id="btExibir" class="btConfirmar"/>
+            <form method="get" id="formData">
+                <label for="entryDate">Digite uma data: </label>
+                <input type="date" name="entryDate" id="entryDate"/>
+                <p>Dia: <span id="day"></span></p>
+                <p>Mês: <span id="mouth"></span></p>
+                <p>Ano: <span id="year"></span></p>
+                <p>Dia da Semana: <span id="weekDay"></span></p>
+                <p>Mês: <span id="mouthExt"></span></p>
+                <p>Tempo: <span id="timeStamp"></span></p>
+                <input type="button" value="Exibir" id="btExibirData" class="btConfirmar"/>
             </form>
         </fieldset>
         <!--Script JS-->
-        <script src="./assets/scripts/form-switch.js"></script>
+        <script src="./assets/scripts/dividir-data.js"></script>
     </body>
 </html>
