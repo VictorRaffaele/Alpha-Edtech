@@ -1,12 +1,17 @@
 const btDefused = document.querySelector("#btDefused");
 const boom = document.querySelector("#explosion");
 const armed = document.querySelector("#armed");
+let time = setTimeout(explosion, 3000);
 
 function explosion() {
     
-    btDefused.textContent = "Tentar Novamente!"
+    const sound = document.querySelector("#sound");
+    const soundExp = new Audio("./assets/sounds/explosion.mp3");
+
+    btDefused.textContent = "Tentar Novamente!";
     armed.style.display = "none";
     boom.style.display = "flex";
+    sound.innerHTML = soundExp.play();
     
 }
 
@@ -25,7 +30,8 @@ function statusBomb() {
 
     } else{
 
-        time = setTimeout(explosion, 10000);
+        clearTimeout(time);
+        time = setTimeout(explosion, 3000);
 
         btDefused.textContent = "Desativar";
         armed.style.display = "flex";
@@ -35,7 +41,4 @@ function statusBomb() {
     }
 }
 
-let time = setTimeout(explosion, 10000);
-
 btDefused.addEventListener("click", statusBomb);
-
