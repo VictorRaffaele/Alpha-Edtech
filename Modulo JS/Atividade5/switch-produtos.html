@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Switch Numbers</title>
+        <title>Seleção de Produtos</title>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
         <!--Link CSS-->
         <link rel="stylesheet" href="./assets/styles/body.css">
@@ -14,7 +14,7 @@
     </head>
     <body>
         <header>
-            <h1>Formulario Switch</h1>
+            <h1>Seleção de Produtos</h1>
             <nav>
                 <ul>
                     <li><a href="./form-switch.html">Formulario Switch</a></li>
@@ -24,14 +24,20 @@
             </nav>
         </header>
         <fieldset>
-            <form method="get" id="formSwitch">
-                <label for="entryNum">Digite um número de 0 a 10: </label>
-                <input type="number" max="10" min="0" name="entryNum" id="entryNum"/>
-                <p>Forma textual: <span id="textual"></span></p>
-                <input type="button" value="Exibir" id="btExibir" class="btConfirmar"/>
+            <form method="get" id="formProdutos">
+                <label for="products">Escolha um produto: </label>
+                <select name="products" id="products">
+                    <option selected value="dualshock4">Controle Dualshock4</option>
+                    <option value="dualshock5">Controle Dualshock5</option>
+                    <option value="xbox-cont">Controle Xbox</option>
+                    <option value="ps5">Playstation 5</option>
+                    <option value="seriesX">Xbox Series X</option>
+                </select>
+                <article id="selected"></article>
+                <input type="button" value="Exibir" id="btExibirProd" class="btConfirmar"/>
             </form>
         </fieldset>
         <!--Script JS-->
-        <script src="./assets/scripts/form-switch.js"></script>
+        <script src="./assets/scripts/switch-produtos.js"></script>
     </body>
 </html>
