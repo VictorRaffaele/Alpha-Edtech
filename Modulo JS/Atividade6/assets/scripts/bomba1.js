@@ -1,7 +1,7 @@
 const btDefused = document.querySelector("#btDefused");
 const boom = document.querySelector("#explosion");
 const armed = document.querySelector("#armed");
-let time = setTimeout(explosion, 3000);
+let time = setTimeout(explosion, 10000);
 
 function explosion() {
     
@@ -31,7 +31,7 @@ function statusBomb() {
     } else{
 
         clearTimeout(time);
-        time = setTimeout(explosion, 3000);
+        time = setTimeout(explosion, 10000);
 
         btDefused.textContent = "Desativar";
         armed.style.display = "flex";
