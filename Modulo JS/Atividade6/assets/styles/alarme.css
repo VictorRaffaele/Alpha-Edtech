@@ -1,0 +1,10 @@
+#backAlarme{
+
+    height: 55vh;
+    width: 55vw;
+
+    background-image: url(../imagens/alarm.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
