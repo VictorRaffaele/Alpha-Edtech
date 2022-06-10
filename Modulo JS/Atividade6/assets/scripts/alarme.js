@@ -17,21 +17,37 @@ function ring(){
 
 }
 
+function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+        display.textContent = minutes + ":" + seconds;
+        if (--timer < 0) {
+            timer = 00;
+        }
+    }, 1000);
+}    
+
 function alarm() {
 
-    const min = document.querySelector("#min").value;
-    const sec = document.querySelector("#sec").value;
+    const min = parseInt(document.querySelector("#min").value);
+    const sec = parseInt(document.querySelector("#sec").value);
+    const duration = min + sec;
     const sumTime = ((min*60) + (sec)) * 1000;
 
     if(btIniciar.innerHTML == "Iniciar"){
 
         time = setTimeout(ring, sumTime);
-        idTime.textContent = sumTime;
+        startTimer(duration, idTime);
         btIniciar.innerHTML = "Desarmar";
 
     } else{
 
         clearInterval(bell);
+        clearTimeout(time);
         btIniciar.innerHTML = "Iniciar";
 
     }
