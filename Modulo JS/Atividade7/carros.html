@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Carros</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+        <!--Link CSS-->
+        <link rel="stylesheet" href="./assets/styles/body.css">
+        <link rel="stylesheet" href="./assets/styles/header.css">
+        <!--Link Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet"/>
+    </head>
+    <body>
+        <header>
+            <h1>Carros</h1>
+            <nav>
+                <ul>
+                    <li><a href="./carros.html">Carros</a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <article id="artModel">
+                <label for="model">Modelo do carro:</label>
+                <select name="model" id="model">
+                    <option value="start">Selecione um modelo</option>
+                    <option value="corolla">Corolla</option>
+                    <option value="renegade">Renegade</option>
+                    <option value="gol">Gol</option>
+                    <option value="s10">S-10</option>
+                    <option value="ranger">Ranger</option>
+                </select>
+            </article>
+            <article>
+                <p>Nome: <spam id="name"></spam></p>
+                <p>Fabricante: <span id="maker"></span></p>
+                <p>Velocidade máxima: <span id="speed"></span></p>
+                <p>0 - 100Km: <span id="torque"></span></p>
+            </article>
+
+            <article id="car"></article>
+        </section>
+        <!--Script JS-->
+        <script src="./assets/scripts/carros.js" defer></script>
+    </body>
+</html>
