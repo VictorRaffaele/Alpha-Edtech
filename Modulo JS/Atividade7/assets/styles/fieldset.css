@@ -1,0 +1,36 @@
+fieldset{
+
+    /*Dimension Details*/
+    width: 30vw;
+    height: 35vh;
+
+    /*Display Details*/
+    display: flex;
+
+    /*Background Details*/
+    background-color: #f7f7f7;
+    
+}
+
+form{
+
+    /*Dimension Details*/
+    width: 25vw;
+    height: 33vh;
+
+    /*Display Details*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+input{
+
+    /*Dimension Details*/
+    height: 3vh;
+
+    /*Font Details*/
+    font-size: 1rem;
+
+}
