@@ -44,10 +44,39 @@ section{
     
 }
 
+article{
+
+    /*Dimension Details*/
+    height: 50vh;
+
+    /*Display Details*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
 img{
 
-    max-width: 80%;
+    max-width: 100%;
 
+}
+
+input{
+
+    border: 1px solid black;
+
+}
+
+textarea{
+
+    /*Dimension Details*/
+    max-width: 25vw;
+    max-height: 20vh;
+
+    /*Border Details*/
+    border: 1px solid black;
+    
 }
 
 /*Button Class*/
@@ -76,24 +105,5 @@ img{
 
     /*Background Details*/
     background-color: #66D3B4;
-
-}
-
-/*Bomb Images IDs*/
-#armed{
-
-    display: flex;
-
-}
-
-#defused{
-
-    display: none;
-
-}
-
-#explosion{
-
-    display: none;
 
 }

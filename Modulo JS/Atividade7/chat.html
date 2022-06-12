@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>CEP</title>
+        <title>Chat</title>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
         <!--Link CSS-->
         <link rel="stylesheet" href="./assets/styles/body.css"/>
         <link rel="stylesheet" href="./assets/styles/header.css"/>
-        <link rel="stylesheet" href="./assets/styles/fieldset.css"/>
         <!--Link Google Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -14,7 +13,7 @@
     </head>
     <body>
         <header>
-            <h1>CEP</h1>
+            <h1>Chat</h1>
             <nav>
                 <ul>
                     <li><a href="./carros.html">Carros</a></li>
@@ -23,13 +22,17 @@
                 </ul>
             </nav>
         </header>
-        <fieldset>
-            <form id="formCep">
-                <label for="cep">CEP:</label>
-                <input type="text" name="cep" id="cep"/>
-            </form>
-        </fieldset>
+        <section>
+            <article>
+                <label for="mensage">Mensagem:</label>
+                <input type="text" name="mensage" id="mensage"/>
+                <button id="btSend" class="btConfirmar">Enviar</button>
+                <label for="chat">Chat:</label>
+                <textarea name="chat" id="chat" cols="30" rows="10"></textarea>
+                <button style="display: none;" id="btDel" class="btConfirmar">Apagar</button>
+            </article>
+        </section>
         <!--Script JS-->
-        <script src="./assets/scripts/cep.js" defer></script>
+        <script src="./assets/scripts/chat.js" defer></script>
     </body>
 </html>
