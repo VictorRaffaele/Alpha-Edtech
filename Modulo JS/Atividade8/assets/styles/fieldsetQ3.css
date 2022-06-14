@@ -1,12 +1,13 @@
 fieldset{
 
     /*Dimension Details*/
-    width: 40vw;
-    height: 60vh;
+    width: 50vw;
+    height: 70vh;
 
     /*Display Details*/
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
 
     /*Background Details*/
     background-color: #f7f7f7;
@@ -17,7 +18,7 @@ form{
 
     /*Dimension Details*/
     width: 25vw;
-    height: 55vh;
+    height: 65vh;
 
     /*Display Details*/
     display: flex;
