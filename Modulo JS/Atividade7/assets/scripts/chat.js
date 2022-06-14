@@ -13,6 +13,7 @@ function send() {
 
         chat.textContent += mensage.value + "\n";
         btDel.style.display = "inline";
+        chat.scrollTop = chat.scrollHeight;
 
     }
 }
@@ -31,13 +32,6 @@ function del() {
     
 }
 
-function roll(){
-
-    chat.scrollTop = mensage.scrollHeight;
-    
-}
-
 mensage.addEventListener("keyup", sendEnter);
-chat.addEventListener("input", roll);
 btSend.addEventListener("click", send);
 btDel.addEventListener("click", del);
