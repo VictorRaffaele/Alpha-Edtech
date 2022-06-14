@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+        <!--Link CSS-->
+        <link rel="stylesheet" href="./assets/styles/body.css"/>
+        <link rel="stylesheet" href="./assets/styles/header.css"/>
+        <link rel="stylesheet" href="./assets/styles/fieldset.css"/>
+        <!--Link Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet"/>
+    </head>
+    <body>
+        <header>
+            <h1>Cadastrar Usuário</h1>
+            <nav>
+                <ul>
+                    <li><a href="./user.html">Cadastrar Usuário</a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </nav>
+        </header>
+        <fieldset>
+            <form method="get" id="formUser">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" placeholder="Digite seu nome"/>
+                <label for="day">Dia:</label>
+                <input type="number" max="31" min="1" name="day" placeholder="Digite o dia do seu nascimento" id="day"/>
+                <label for="month">Mes:</label>
+                <input type="number" max="12" min="1" placeholder="Digite o mes do seu nascimento" id="month"/>
+                <label for="year">Ano:</label>
+                <input type="number" min="1" id="year" placeholder="Digite o ano do seu nascimento"/>
+                <label for="weight">Peso:</label>
+                <input type="text" id="weight" placeholder="Digite seu peso em Kg"/>
+                <label for="height">Altura:</label>
+                <input type="text" id="height" placeholder="Digite sua altura em cm"/>
+                <label for="gender">Gênero:</label>
+                <select name="gender" id="gender">
+                    <option value="male">Masculino</option>
+                    <option value="female">Feminino</option>
+                    <option value="homo">Homoafeivo</option>
+                    <option value="not">Não Informar</option>
+                </select>
+                <input type="button" value="Cadastrar" id="btCadastrar" class="btConfirmar"/>
+            </form>
+        </fieldset>
+        <!--Script JS-->
+        <script src="./assets/script/user.js"></script>
+    </body>
+</html>
