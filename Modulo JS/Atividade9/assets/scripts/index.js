@@ -7,7 +7,6 @@ const idNum2 = document.querySelector("#operando2");
 function soma(num1, num2) {
 
     if (isNaN(num1) || isNaN(num2)) {
-        console.log(num1, num2)
 
         throw new Error(`[sum] Impossible to sum ${idNum1.value} + ${idNum2.value}`);
 
@@ -85,6 +84,28 @@ function exponenciação(num1, num2){
 }
 
 function divisão(num1, num2) {
+
+    if (isNaN(num1) || isNaN(num2)) {
+        
+        throw new Error(`[divide] Impossible to divide ${idNum1.value} - ${idNum2.value}`);
+
+    } else if(num2 === 0){
+
+        throw new Error(`[divide] Division by zero`);
+
+    } else{
+
+        if (num1 < num2) {
+
+            return 0;
+
+        } else{
+            
+            return soma(1, divisão(subtração(num1, num2, 0), num2));
+
+        }
+    }
+
 }
 
 function calcular(){
