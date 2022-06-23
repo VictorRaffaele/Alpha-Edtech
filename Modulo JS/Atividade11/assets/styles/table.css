@@ -1,0 +1,34 @@
+#artTable{
+
+    margin-top: 10vh;
+
+    display: none;
+
+    background-color: #f7f7f7;
+
+}
+
+table{
+
+    /*Dimension Details*/
+    width: 40vw;
+
+}
+
+tr{
+
+    text-align: center;
+
+}
+
+img:hover{
+
+    background-color: #727272;
+
+}
+
+#btSearch{
+
+    height: 2.5vh;
+
+}

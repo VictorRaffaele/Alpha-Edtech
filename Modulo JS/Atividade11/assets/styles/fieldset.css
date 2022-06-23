@@ -1,0 +1,28 @@
+fieldset{
+
+    /*Dimension Details*/
+    width: 40vw;
+    height: 62vh;
+
+    /*Display Details*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /*Background Details*/
+    background-color: #f7f7f7;
+    
+}
+
+form{
+
+    /*Dimension Details*/
+    width: 25vw;
+    height: 55vh;
+
+    /*Display Details*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
