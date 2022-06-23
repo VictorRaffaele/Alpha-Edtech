@@ -166,6 +166,12 @@ function tableMaker(dados) {
     tdEdits.innerHTML = "Editar";
     tdDeletes.innerHTML = "Apagar";
 
+    //Definindo classes CSS para os titulos da tabela
+    tdIDs.setAttribute("class", "tableTh");
+    tdNames.setAttribute("class", "tableTh");
+    tdValues.setAttribute("class", "tableTh");
+
+    //Definindo funções para os titulo da tabela
     tdIDs.setAttribute("onclick", `sortID()`);
     tdNames.setAttribute("onclick", `sortName()`);
     tdValues.setAttribute("onclick", `sortValue()`);
@@ -197,6 +203,7 @@ function tableMaker(dados) {
         imgEdit.setAttribute("onclick", `tryEdit(${JSON.stringify(dados[index])})`);
         imgDelete.setAttribute("onclick", `delProduct(${dados[index].id})`);
         td_name.setAttribute("onclick", `readProduct(${dados[index].id})`);
+        td_name.setAttribute("class", "tableTh");
 
     }
 
