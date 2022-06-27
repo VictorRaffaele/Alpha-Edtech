@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Euler</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+        <!--Link CSS-->
+        <link rel="stylesheet" href="./assets/styles/body.css"/>
+        <link rel="stylesheet" href="./assets/styles/header.css"/>
+        <link rel="stylesheet" href="./assets/styles/fieldset.css"/>
+        <!--Link Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet"/>
+    </head>
+    <body>
+        <header>
+            <h1>Número de Euler</h1>
+            <nav>
+                <ul>
+                    <li><a href="./euler.html">Número de Euler</a></li>
+                    <li><a href="">Números Primos</a></li>
+                    <li><a href="">Nilakantha</a></li>
+                    <li><a href="">Poker</a></li>
+                </ul>
+            </nav>
+        </header>
+        <fieldset>
+            <form method="get" id="formUser">
+                <label for="entry">Número de entrada:</label>
+                <input type="number" min="0" name="entry" id="entry">
+                <label for="result">Resultado:</label>
+                <p id="result"></p> 
+                <button type="button" class="btConfirmar" id="btCalc">Calcular</button>
+            </form>
+        </fieldset>
+        <!--Script JS-->
+        <script src="./assets/script/euler.js" defer></script>
+    </body>
+</html>
