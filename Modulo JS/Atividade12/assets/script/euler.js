@@ -1,6 +1,7 @@
 const entry = document.querySelector("#entry");
 const result = document.querySelector("#result");
 const btCalc = document.querySelector("#btCalc");
+const formEuler = document.querySelector("#formEuler");
 
 function factorial(num) {
     
@@ -27,7 +28,7 @@ function factorial(num) {
 
 function euler() {
     
-    let sum = 0
+    let sum = 0;
     let num = entry.value;
 
     sum = (1+1/factorial(num))**factorial(num);
@@ -42,4 +43,15 @@ function showResult() {
  
 }
 
+function enterResult(e) {
+
+    if(e.code == "Enter" || e.code == "NumpadEnter"){
+
+        showResult();
+    
+    }
+}
+
 btCalc.addEventListener("click", showResult);
+formEuler.addEventListener("submit", e => {e.preventDefault();});
+entry.addEventListener("keyup", enterResult);
