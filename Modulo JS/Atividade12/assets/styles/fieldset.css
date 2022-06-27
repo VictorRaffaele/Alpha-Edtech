@@ -1,0 +1,74 @@
+fieldset{
+
+    /*Dimension Details*/
+    min-width: 30vw;
+    height: 40vh;
+
+    /*Display Details*/
+    display: flex;
+    justify-content: center;
+
+    /*Background Details*/
+    background-color: #f7f7f7;
+    
+}
+
+form{
+
+    /*Dimension Details*/
+    width: 30vw;
+    height: 40vh;
+
+    /*Display Details*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+input{
+
+    /*Dimension Details*/
+    height: 3vh;
+
+    /*Font Details*/
+    font-size: 1rem;
+
+}
+
+
+/*Classes*/
+.btConfirmar{
+
+    /*Dimension Details*/
+    width: 10vw;
+    height: 4vh;
+
+    /*Display Details*/
+    align-self: center;
+
+    /*Background Details*/
+    background-color: #00B682;
+
+}
+
+.btConfirmar:hover{
+
+    /*Background Details*/
+    background-color: #4DCCA7;
+
+}
+
+.btConfirmar:active{
+
+    /*Background Details*/
+    background-color: #66D3B4;
+
+}
+
+#result{
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
