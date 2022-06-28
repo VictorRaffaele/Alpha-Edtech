@@ -1,5 +1,6 @@
 const entry = document.querySelector("#entry");
 const result = document.querySelector("#result");
+const fact = document.querySelector("#fact");
 const btCalc = document.querySelector("#btCalc");
 const formEuler = document.querySelector("#formEuler");
 
@@ -39,7 +40,10 @@ function euler() {
 
 function showResult() {
 
-    result.textContent = euler();
+    fact.textContent = "Fatorial: ";
+    result.textContent = "Número de Euler: ";
+    fact.textContent += factorial(entry.value);
+    result.textContent += euler();
  
 }
 
