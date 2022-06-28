@@ -2,7 +2,7 @@ fieldset{
 
     /*Dimension Details*/
     min-width: 30vw;
-    mix-height: 40vh;
+    min-height: 40vh;
 
     /*Display Details*/
     display: flex;
