@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Euler</title>
+        <title>Prime Numbers</title>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
         <!--Link CSS-->
         <link rel="stylesheet" href="./assets/styles/body.css"/>
@@ -14,7 +14,7 @@
     </head>
     <body>
         <header>
-            <h1>Número de Euler</h1>
+            <h1>Números Primos</h1>
             <nav>
                 <ul>
                     <li><a href="./euler.html">Número de Euler</a></li>
@@ -25,15 +25,13 @@
             </nav>
         </header>
         <fieldset>
-            <form method="get" id="formEuler">
-                <label for="entry">Número de entrada:</label>
-                <input type="number" min="0" name="entry" id="entry">
-                <label for="result">Resultado:</label>
-                <p id="result"></p> 
-                <button type="button" class="btConfirmar" id="btCalc">Calcular</button>
+            <form method="get" id="formPrime">
+                <button type="button" class="btConfirmar" id="btFind">Encontrar</button>
+                <label for="number">Números:</label>
+                <p id="number"></p> 
             </form>
         </fieldset>
         <!--Script JS-->
-        <script src="./assets/script/euler.js" defer></script>
+        <script src="./assets/script/primeNum.js" defer></script>
     </body>
 </html>
