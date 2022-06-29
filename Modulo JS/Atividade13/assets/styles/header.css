@@ -1,0 +1,49 @@
+header{
+
+    /*Dimension Details*/
+    width: 100vw;
+    height: 10vh;
+
+    /*Display Details*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    /*Background Details*/
+    background-color: #4DCCA7;
+
+}
+
+ul{
+
+    /*Dimension Details*/
+    width: 50vw;
+
+    /*Display Details*/
+    display: flex;
+    justify-content: space-between;
+
+    /*List Details*/
+    list-style-type: none;
+
+}
+
+a{
+
+    /*Font Details*/
+    color: black;
+    text-decoration: none;
+
+}
+
+a:hover{
+
+    color: blue;
+    
+}
+
+a:active{
+
+    color: red;
+
+}
