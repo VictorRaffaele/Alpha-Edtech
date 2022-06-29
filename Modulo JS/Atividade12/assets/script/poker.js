@@ -98,11 +98,11 @@ function shuffleDeck(array) {
 //Use auxiliary array to keep the dealts cards
 function dealCards() {
 
-    const dealCards = [ {valor: 2, naipe: 'paus'}]
+    const dealCards = []
 
     shuffleDeck(deck);
 
-    for (let index = 0; index < 4; index++) {
+    for (let index = 0; index < 5; index++) {
 
         dealCards.push(deck[index]);
 
