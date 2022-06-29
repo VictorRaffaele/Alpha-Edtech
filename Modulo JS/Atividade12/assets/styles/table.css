@@ -21,6 +21,13 @@ article{
 
 }
 
+#cards{
+
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
 /*Classes*/
 .btConfirmar{
 
@@ -53,6 +60,6 @@ article{
 
 img{
 
-    max-width: 40%;
+    max-width: 15%;
 
 }
