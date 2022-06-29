@@ -95,24 +95,44 @@ function shuffleDeck(array) {
     return array;
 }
 
-//Use auxliar array to keep the dealts cards
+//Use auxiliary array to keep the dealts cards
 function dealCards() {
 
-    const dealCards = []
+    const dealCards = [ {valor: 2, naipe: 'paus'}]
 
     shuffleDeck(deck);
 
-    for (let index = 0; index < 5; index++) {
+    for (let index = 0; index < 4; index++) {
 
         dealCards.push(deck[index]);
 
     }
-    
-    cards.innerHTML = `${dealCards[0].valor} ` + `${dealCards[1].valor} ` + `${dealCards[2].valor} ` + `${dealCards[3].valor} ` + `${dealCards[4].valor}`;
-    cards.innerHTML += "<br>" + `${dealCards[0].naipe} ` + `${dealCards[1].naipe} ` + `${dealCards[2].naipe} ` + `${dealCards[3].naipe} ` + `${dealCards[4].naipe} `;
+
+    showCards(dealCards);
 
     return dealCards; 
+}
 
+//Insert cards images
+function showCards(dealCards) {
+    
+    cards.innerHTML = ''
+    for (let index = 0; index < dealCards.length; index++) {
+        
+        if (dealCards[index].naipe == 'ouro') {
+            
+            cards.innerHTML += `<img src="./assets/images/${dealCards[index].valor}D.svg" alt="img"/>`
+        } else if (dealCards[index].naipe == 'espada') {
+            cards.innerHTML += `<img src="./assets/images/${dealCards[index].valor}S.svg" alt="img"/>`
+
+        } else if (dealCards[index].naipe == 'copas') {
+            cards.innerHTML += `<img src="./assets/images/${dealCards[index].valor}H.svg" alt="img"/>`
+
+        } else{
+            cards.innerHTML += `<img src="./assets/images/${dealCards[index].valor}C.svg" alt="img"/>`
+
+        }
+    }
 }
 
 function gameResult() {
