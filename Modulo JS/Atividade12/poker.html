@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Euler</title>
+        <title>Poker</title>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
         <!--Link CSS-->
         <link rel="stylesheet" href="./assets/styles/body.css"/>
         <link rel="stylesheet" href="./assets/styles/header.css"/>
-        <link rel="stylesheet" href="./assets/styles/fieldset.css"/>
+        <link rel="stylesheet" href="./assets/styles/table.css"/>
         <!--Link Google Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -14,27 +14,24 @@
     </head>
     <body>
         <header>
-            <h1>Número de Euler</h1>
+            <h1>Poker</h1>
             <nav>
                 <ul>
                     <li><a href="./euler.html">Número de Euler</a></li>
                     <li><a href="./primeNum.html">Números Primos</a></li>
                     <li><a href="./nilakantha.html">Nilakantha</a></li>
-                    <li><a href="poker.html">Poker</a></li>
+                    <li><a href="./poker.html">Poker</a></li>
                 </ul>
             </nav>
         </header>
-        <fieldset>
-            <form method="get" id="formEuler">
-                <label for="entry">Número de entrada:</label>
-                <input type="number" min="0" name="entry" id="entry">
-                <label for="result">Resultado:</label>
-                <p id="fact"></p>
-                <p id="result"></p> 
-                <button type="button" class="btConfirmar" id="btCalc">Calcular</button>
-            </form>
-        </fieldset>
+        <main id="table">
+            <article id="cards"></article>
+            <article>
+                <p id="result"></p>
+                <button type="button" class="btConfirmar" id="btDeal">Distribuir</button>
+            </article>
+        </main>
         <!--Script JS-->
-        <script src="./assets/script/euler.js" defer></script>
+        <script src="./assets/script/poker.js" defer></script>
     </body>
 </html>
