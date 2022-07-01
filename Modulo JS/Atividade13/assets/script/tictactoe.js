@@ -37,6 +37,7 @@ function enemy(index) {
 
         elementos[index].innerHTML = 'O';
         play(index, 'O');
+        final();
 
     } else{
 
@@ -96,7 +97,7 @@ function confirm() {
             //Lose by line
             } else if(played[0][coluna] == 'O' && played[1][coluna] == 'O' && played[2][coluna] == 'O') {
 
-                return 1;
+                return 2;
             } 
         }
     }
