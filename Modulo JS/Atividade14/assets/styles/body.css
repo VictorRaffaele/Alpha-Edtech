@@ -1,0 +1,44 @@
+*{
+
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+
+}
+
+body{
+
+    /*Dimension Details*/
+    width: 100vw;
+    height: 100vh;
+
+    /*Display Details*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: hidden;
+
+    /*Font Details*/
+    font-family: 'Roboto', sans-serif;
+
+    /*Background Details*/
+    background-color: #727272;
+
+}
+
+#artResult{
+
+    /*Dimension Details*/
+    height: 10vh;
+
+    /*Display Details*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+
+}
