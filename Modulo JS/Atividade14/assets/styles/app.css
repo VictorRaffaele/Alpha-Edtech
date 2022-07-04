@@ -1,0 +1,60 @@
+/*ID*/
+#app{
+
+    /*Dimension Details*/
+    width: 70vw;
+    height: 80vh;
+
+    /*Display Details*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    /*Background Details*/
+    background-color: #f7f7f7;
+
+}
+
+article{
+
+    text-align: center;
+    font-weight: 600;
+
+}
+
+img{
+
+    max-width: 40%;
+
+}
+
+button{
+
+    width: 10vw;
+    height: 4vh;
+
+    border: none;
+
+    /*Background Details*/
+    background-color: #00B682;
+
+    font-size: small;
+    font-weight: 600;
+
+}
+
+button:hover{
+
+    /*Background Details*/
+    background-color: #4DCCA7;
+
+}
+
+button:active{
+
+    /*Background Details*/
+    background-color: #66D3B4;
+
+}
+
