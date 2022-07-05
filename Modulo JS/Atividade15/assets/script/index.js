@@ -74,8 +74,6 @@ function requestData() {
         fetch(`https://economia.awesomeapi.com.br/json/daily/${coin}/?start_date=${splitData(begin.value)}&end_date=${splitData(final.value)}`, {method: 'GET'})
         .then(resp => resp.json(), )
         .then(function (obj) {
-            console.log(obj)
-            const date = new Date(obj[0].timestamp)
             
             createTable();
 
