@@ -1,17 +1,5 @@
 const model = document.querySelector("#model");
 
-function addImage(sorce) {
-
-    const image = document.createElement("img");
-    const selected = document.querySelector("#selected");
-
-    image.src = sorce;
-    image.style.width = "100px";
-    image.style.height = "100px";
-    selected.appendChild(image);
-
-}
-
 function showData() {
     
     const name = document.querySelector("#name");
@@ -66,6 +54,7 @@ function showData() {
             speed.textContent = "180 Km/h";
             torque.textContent = "13,3 segundos";
             imgCar.innerHTML = '<img src="./assets/imagens/ranger.webp">';
+            console.log(imgCar.innerHTML)
             break;
     }
 
