@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cotação</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+        <!--Link CSS-->
+        <link rel="stylesheet" href="./assets/styles/body.css"/>
+        <link rel="stylesheet" href="./assets/styles/main.css">
+        <!--Link Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet"/>
+    </head>
+</html>
+<body id="coinPage">
+    <header>
+        <h1>Cotação</h1>
+    </header>
+    <main>
+        <form method="get" id="formCoins">
+            <label for="coins">Número de entrada:</label>
+            <select name="coins" id="coins">
+                <option value="realDolar">Real-Dolar</option>
+                <option value="dolarReal">Dolar-Real</option>
+                <option value="realEuro">Real-Euro</option>
+                <option value="euroReal">Euro-Real</option>
+                <option value="dolarEuro">Dolar-Euro</option>
+                <option value="euroDolar">Euro-Dolar</option>
+            </select>
+            <label for="begin">Data de Início:</label>
+            <input type="date" name="begin" id="begin">
+            <label for="final">Data de Fim:</label>
+            <input type="date" name="final" id="final">
+        </form>
+        <button type="button" class="btConfirmar" id="btCalc">Calcular</button>
+    </main>
+    <table id="tableResult"></table>
+    <!--Script JS-->
+    <script type="module" src="./assets/script/index.js" defer></script>
+</body>
