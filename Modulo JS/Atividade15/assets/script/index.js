@@ -36,54 +36,62 @@ function splitData(date) {
     return aux;
 }
 
-//Receive url and request API data to table.
-function requestData() {
+function coinSelect() {
 
     let coin = '';
-    changeCursor();
 
     switch (coins.value) {
         case "realDolar":
-            coin = "BRL-USD";
-            break;
+            return coin = "BRL-USD";
         case "dolarReal":
-            coin = "USD-BRL";
-            break;
+            return coin = "USD-BRL";
         case "realEuro":
-            coin = "BRL-EUR";
-            break;
+            return coin = "BRL-EUR";
         case "euroReal":
-            coin = "EUR-BRL";
-            break;
+            return coin = "EUR-BRL";
         case "dolarEuro":
-            coin = "USD-EUR";
-            break;
+            return coin = "USD-EUR";
         case "euroDolar":
-            coin = "EUR-USD";
-            break;
+            return coin = "EUR-USD";
     }
+}
+
+//Receive url and request API data to table.
+function requestData() {
+
+    changeCursor();
     
     if (begin.value == '' || final.value == '') {
 
         alert("Campo vazio, por favor preencher!");
         changeCursor();
 
-    } else{
+    } else if(begin.value > final.value){
+
+        alert("Erro na inserção da data, verifique se a data inicial é anterior a final!");
+
+    } else {
 
         tableResult.style.display = 'table';
-        fetch(`https://economia.awesomeapi.com.br/json/daily/${coin}/?start_date=${splitData(begin.value)}&end_date=${splitData(final.value)}`, {method: 'GET'})
-        .then(resp => resp.json(), )
-        .then(function (obj) {
-            
-            createTable();
 
-            for (let index = 0; index < obj.length; index++) {
+            createTable();
+    
+            for (let index = parseInt(splitData(final.value)); index >= parseInt(splitData(begin.value)); index--) {
+                fetch(`https://economia.awesomeapi.com.br/json/daily/${coinSelect()}/?start_date=${index}}&end_date=${index}`, {method: 'GET'})
+                .then(resp => resp.json())
+                .then(function (obj) {  
+                    console.log(index)
+                    tableLine(obj[0].name, obj[0].bid-obj[0].varBid, obj[0].create_date, obj[0].low, obj[0].high, obj[0].bid);
+
+                })
+                .catch(e => console.log(e.msg))
+            }
+
+            /*for (let index = 0; index < obj.length; index++) {
 
                 tableLine(obj[index].name, obj[index].bid-obj[index].varBid, obj[index].create_date, obj[index].low, obj[index].high, obj[index].bid);
 
-            }
-            
-        })
+            }*/
         setTimeout(changeCursor, 3000);
     }
 }
