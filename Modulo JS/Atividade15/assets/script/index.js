@@ -80,18 +80,12 @@ function requestData() {
                 fetch(`https://economia.awesomeapi.com.br/json/daily/${coinSelect()}/?start_date=${index}}&end_date=${index}`, {method: 'GET'})
                 .then(resp => resp.json())
                 .then(function (obj) {  
-                    console.log(index)
+                    
                     tableLine(obj[0].name, obj[0].bid-obj[0].varBid, obj[0].create_date, obj[0].low, obj[0].high, obj[0].bid);
 
                 })
                 .catch(e => console.log(e.msg))
             }
-
-            /*for (let index = 0; index < obj.length; index++) {
-
-                tableLine(obj[index].name, obj[index].bid-obj[index].varBid, obj[index].create_date, obj[index].low, obj[index].high, obj[index].bid);
-
-            }*/
         setTimeout(changeCursor, 3000);
     }
 }
