@@ -1,0 +1,84 @@
+main{
+
+    /*Dimension Details*/
+    width: 45vw;
+    min-height: 45vh;
+    margin-bottom: 35px;
+
+    /*Display Details*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    /*Background Details*/
+    background-color: #f7f7f7;
+
+}
+
+article{
+
+    /*Dimension Details*/
+    min-width: 25vw;
+    min-height: 5vh;
+
+    /*Display Details*/
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+select{
+
+    /*Dimension Details*/
+    min-width: 5vw;
+    height: 3vh;
+
+    /*Font Details*/
+    font-size: 1rem;
+
+}
+
+button{
+
+    /*Dimension Details*/
+    width: 10vw;
+    height: 3vh;
+
+    /*Boarder Details*/
+    border: none;
+
+    /*Background Details*/
+    background-color: #00B682;
+
+    /*Font Details*/
+    font-size: small;
+    font-weight: 600;
+
+}
+
+button:hover{
+
+    /*Background Details*/
+    background-color: #4DCCA7;
+
+}
+
+button:active{
+
+    /*Background Details*/
+    background-color: #66D3B4;
+
+}
+
+#artCity{
+
+    visibility: hidden;
+
+}
+
+#temp{
+
+    display: table;
+
+}
