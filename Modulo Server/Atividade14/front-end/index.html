@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CRUD Usuarios</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+        <!--Link CSS-->
+        <link rel="stylesheet" href="./assets/styles/body.css"/>
+        <link rel="stylesheet" href="./assets/styles/header.css"/>
+        <link rel="stylesheet" href="./assets/styles/fieldset.css"/>
+        <!--Link Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet"/>
+    </head>
+    <body>
+        <header>
+            <h1>CRUD Usuarios</h1>
+        </header>
+        <fieldset>
+            <form method="post" id="formUser">
+                <label for="name">Nome do Usuario:</label>
+                <input type="text" name="name" id="name"/>
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email"/>
+            </form>
+            <article>
+                <button type="button" id="btCadastrar" class="btConfirmar">Cadastrar</button>
+                <button type="button" id="btList" class="btConfirmar">Listar</button>
+            </article>
+        </fieldset>
+        <table id="tableUsers"></table>
+        <!--Script JS-->
+        <script src="./assets/script/users.js"></script>
+    </body>
+</html>
