@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Home</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+        <!--Link CSS-->
+        <link rel="stylesheet" href="./styles/body.css"/>
+        <link rel="stylesheet" href="./styles/header.css"/>
+        <link rel="stylesheet" href="./styles/fieldset.css"/>
+        <!--Link Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet"/>
+    </head>
+    <body>
+        <header>
+            <h1>Login</h1>
+            <input type="hidden" id="token" name="token">
+        </header>
+        <fieldset>
+            <form method="post" id="formUser">
+                <label for="name">Nome:</label>
+                <input type="text" name="name" id="name">
+                <label for="password">Senha:</label>
+                <input type="password" name="password" id="password">
+                <button id="loginBt" type="button">
+                    <a id="link" href="">Logar</a>
+                </button>
+            </form>
+        </fieldset>
+    </body>
+    <script type="module" src="./script/index.js"></script>
+</html>
