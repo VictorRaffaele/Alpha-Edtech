@@ -1,0 +1,3 @@
+1FN - Para eliminar as redundâncias removeremos as tabelas de Cliente e Administrador, e colocaremos um campo de permissão de administrador(adm-perm) na tabela User para diferenciar os administradores dos clientes.
+2FN - Para fazermos com que todos os itens não chaves dependam da chave, foi removido os atributos de valor_total da tabela Carrinho.
+3FN - Para que todos os atributos não chaves, não dependam de outros atributos não chave, passamos a referencia das chaves estrangeiras da tabela Produto para os ids da tabela Categoria e Marca e não mais os nomes respectivos, visto que foi um erro que passou despercebido anteriormente.
