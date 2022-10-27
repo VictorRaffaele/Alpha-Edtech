@@ -1,21 +1,55 @@
 class Validator {
-    data: number | string;
+    protected data: any;
 
-    constructor(_data: number | string) {
-        this.validate(_data);
+    constructor(_data: any) {
+        this.data = _data;
     }
+}
 
-    validate(data: number | string){
-        if (typeof data === 'string') {
-            this.data = data;
+class StringValidator extends Validator{
+
+    constructor(_data){
+        if (typeof _data === 'string') {
+            super(_data);
         } else{
-            data = data.toString();
-            this.data = `${data.slice(0,2)}/${data.slice(2,4)}/${data.slice(4)}`;
+            throw new Error("O tipo está errado");
         }
     }
 }
 
-const date:Validator = new Validator(18021999);
-const date2:Validator = new Validator("18/02/1999");
-console.log(date.data);
-console.log(date2.data);
+class NumberValidator extends Validator{
+
+    constructor(_data){
+        if (typeof _data === 'number') {
+            super(_data);
+        } else{
+            throw new Error("O tipo está errado");
+        }
+    }
+}
+
+class BooleanValidator extends Validator{
+
+    constructor(_data){
+        if (typeof _data === 'boolean') {
+            super(_data);
+        } else{
+            throw new Error("O tipo está errado");
+        }
+    }
+}
+
+try {
+    const num = new NumberValidator(18021999);
+    const string = new StringValidator("18/02/1999");
+    const bool = new BooleanValidator(false);
+    const numE = new NumberValidator('18021999');
+    console.log(num);
+    console.log(string);
+    console.log(bool);
+    console.log(numE);
+} catch (error) {
+    console.log(error);
+}
+
+
