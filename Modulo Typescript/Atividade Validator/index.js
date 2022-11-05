@@ -1,76 +1,84 @@
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        if (typeof b !== "function" && b !== null)
-            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-var Validator = /** @class */ (function () {
-    function Validator(_data) {
+"use strict";
+class Validator {
+    constructor(_data) {
         this.data = _data;
     }
-    return Validator;
-}());
-var StringValidator = /** @class */ (function (_super) {
-    __extends(StringValidator, _super);
-    function StringValidator(_data) {
-        var _this = this;
+}
+class StringValidator extends Validator {
+    constructor(_data) {
         if (typeof _data === 'string') {
-            _this = _super.call(this, _data) || this;
+            super(_data);
         }
         else {
             throw new Error("O tipo está errado");
         }
-        return _this;
     }
-    return StringValidator;
-}(Validator));
-var NumberValidator = /** @class */ (function (_super) {
-    __extends(NumberValidator, _super);
-    function NumberValidator(_data) {
-        var _this = this;
+}
+class NumberValidator extends Validator {
+    constructor(_data) {
         if (typeof _data === 'number') {
-            _this = _super.call(this, _data) || this;
+            super(_data);
         }
         else {
             throw new Error("O tipo está errado");
         }
-        return _this;
     }
-    return NumberValidator;
-}(Validator));
-var BooleanValidator = /** @class */ (function (_super) {
-    __extends(BooleanValidator, _super);
-    function BooleanValidator(_data) {
-        var _this = this;
+}
+class BooleanValidator extends Validator {
+    constructor(_data) {
         if (typeof _data === 'boolean') {
-            _this = _super.call(this, _data) || this;
+            super(_data);
         }
         else {
             throw new Error("O tipo está errado");
         }
-        return _this;
     }
-    return BooleanValidator;
-}(Validator));
-try {
-    var num = new NumberValidator(18021999);
-    var string = new StringValidator("18/02/1999");
-    var bool = new BooleanValidator(false);
-    var numE = new NumberValidator('18021999');
+}
+class RegexValidator extends StringValidator {
+    constructor(_data) {
+        const regex = /^(\w{1,}@\w{1,}\.(\w{3})(\.\w{2}){0,1})$/;
+        if (regex.test(_data)) {
+            super(_data);
+        }
+        else {
+            throw new Error("O formato está errado");
+        }
+    }
+}
+class EmailInput extends HTMLElement {
+    constructor() {
+        super();
+        const shadow = this.attachShadow({ mode: "open" });
+        const label = document.createElement('label');
+        const emailInput = document.createElement('input');
+        const resultP = document.createElement('p');
+        label.innerText = 'Email:';
+        label.setAttribute('for', 'emailInput');
+        emailInput.setAttribute('id', 'emailInput');
+        shadow.appendChild(label);
+        shadow.appendChild(emailInput);
+        shadow.appendChild(resultP);
+        emailInput.addEventListener('change', (e) => {
+            try {
+                resultP.innerText = '';
+                new RegexValidator(e.target.value);
+            }
+            catch (error) {
+                resultP.innerText = error.message;
+            }
+        });
+    }
+}
+customElements.define("email-input", EmailInput);
+/*try {
+    const num = new NumberValidator(18021999);
+    const string = new StringValidator("18/02/1999");
+    const bool = new BooleanValidator(false);
+    const numE = new NumberValidator(18021999);
     console.log(num);
     console.log(string);
     console.log(bool);
     console.log(numE);
-}
-catch (error) {
+} catch (error) {
     console.log(error);
-}
+}*/
