@@ -1,50 +1,58 @@
-import { BodyData, LoginData, Response, UserData } from "../interfaces";
-export default class ApiIndex{
-    async register(data: BodyData): Promise<Response<BodyData>>{
+import {Response, BodyData, LoginData, UserData} from "../model/index.js";
+
+class ApiIndex{
+    async register(data: BodyData){
         try {
             const options = { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(data) };
             const response = await fetch("/accounts/", options);
-    
-            if (!response.ok) {
+            if (!response.ok || response.status == 500) {
                 const message = await response.json();
                 throw new Error(message.error);
             }
-            return await response.json();
+            const result = await response.json();
+            const resp = {'id': result[0].id, 'email': result[0].email, 'name': result[0].name};
+            return resp;
         } catch (error: any) {
-            return error;
+            throw error;
         }
 
     }
 
-    async login(data: LoginData): Promise<Response<LoginData>>{
+    async login(data: LoginData){
         try {
             const options = { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(data) };
             const response = await fetch("/accounts/login", options);
     
-            if (!response.ok) {
+            if (!response.ok || response.status == 500) {
                 const message = await response.json();
                 throw new Error(message.error);
             }
-            return await response.json();
+            const result = await response.json();
+            return result;
         } catch (error: any) {
-            return error;
+            throw error;
         }
       
     }
 
-    async update(data: UserData): Promise<Response<UserData>> {
+    async update(data: BodyData) {
         try {
             const options = { method: "PATCH", headers: { "Content-Type": "application/json" }, body: JSON.stringify(data) };
             const response = await fetch("/accounts", options);
     
-            if (!response.ok) {
+            if (!response.ok || response.status == 500) {
                 const message = await response.json();
                 throw new Error(message.error);
             }
-            return await response.json();
-        } catch (error: any) {
-            return error;
+            const result = await response.json();
+            const resp = {'id': result[0].id, 'email': result[0].email, 'name': result[0].name};
+            return resp;        
+        } 
+        catch (error: any) {
+            throw error;
         }
 
     }
 }
+
+export {ApiIndex};

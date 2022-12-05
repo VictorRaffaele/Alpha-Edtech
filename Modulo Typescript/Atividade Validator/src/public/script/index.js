@@ -1,4 +1,4 @@
-import ApiIndex from './api/index.js';
+import { v4 as uuidv4 } from 'uuid';
 //Activity 1
 class Validator {
     constructor(_data) {
@@ -169,17 +169,61 @@ class PasswordInput extends HTMLElement {
 }
 customElements.define("name-input", NameInput);
 customElements.define("password-input", PasswordInput);
+class ApiIndex {
+    async register(data) {
+        try {
+            const options = { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(data) };
+            const response = await fetch("/accounts/", options);
+            if (!response.ok) {
+                const message = await response.json();
+                throw new Error(message.error);
+            }
+            return await response.json();
+        }
+        catch (error) {
+            return error;
+        }
+    }
+    async login(data) {
+        try {
+            const options = { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(data) };
+            const response = await fetch("/accounts/login", options);
+            if (!response.ok) {
+                const message = await response.json();
+                throw new Error(message.error);
+            }
+            return await response.json();
+        }
+        catch (error) {
+            return error;
+        }
+    }
+    async update(data) {
+        try {
+            const options = { method: "PATCH", headers: { "Content-Type": "application/json" }, body: JSON.stringify(data) };
+            const response = await fetch("/accounts", options);
+            if (!response.ok) {
+                const message = await response.json();
+                throw new Error(message.error);
+            }
+            return await response.json();
+        }
+        catch (error) {
+            return error;
+        }
+    }
+}
 const btReg = document.querySelector("#btReg");
 const btLogin = document.querySelector("#btLogin");
 const btUpdate = document.querySelector("#btUpdate");
 const resultP = document.querySelector("#result");
 btReg.addEventListener("click", async () => {
-    var _a, _b, _c, _d, _e, _f, _g, _h, _j;
+    var _a, _b, _c, _d, _e, _f;
     try {
-        const name = (_c = (_b = (_a = document.querySelector('name-input')) === null || _a === void 0 ? void 0 : _a.shadowRoot) === null || _b === void 0 ? void 0 : _b.querySelector('#nameInput')) === null || _c === void 0 ? void 0 : _c.value;
-        const email = (_f = (_e = (_d = document.querySelector('email-input')) === null || _d === void 0 ? void 0 : _d.shadowRoot) === null || _e === void 0 ? void 0 : _e.querySelector('#emailInput')) === null || _f === void 0 ? void 0 : _f.value;
-        const pass = (_j = (_h = (_g = document.querySelector('password-input')) === null || _g === void 0 ? void 0 : _g.shadowRoot) === null || _h === void 0 ? void 0 : _h.querySelector('#passInput')) === null || _j === void 0 ? void 0 : _j.value;
-        const data = { name: name, email: email, password: pass };
+        const name = (_b = (_a = document.querySelector('name-input')) === null || _a === void 0 ? void 0 : _a.shadowRoot) === null || _b === void 0 ? void 0 : _b.querySelector('#nameInput');
+        const email = (_d = (_c = document.querySelector('email-input')) === null || _c === void 0 ? void 0 : _c.shadowRoot) === null || _d === void 0 ? void 0 : _d.querySelector('#emailInput');
+        const pass = (_f = (_e = document.querySelector('password-input')) === null || _e === void 0 ? void 0 : _e.shadowRoot) === null || _f === void 0 ? void 0 : _f.querySelector('#passInput');
+        const data = { name: name.value, email: email.value, password: pass.value };
         const apiIndex = new ApiIndex();
         const result = await apiIndex.register(data);
         resultP.innerText = result;
@@ -189,11 +233,11 @@ btReg.addEventListener("click", async () => {
     }
 });
 btLogin.addEventListener("click", async () => {
-    var _a, _b, _c, _d, _e, _f;
+    var _a, _b, _c, _d;
     try {
-        const email = (_c = (_b = (_a = document.querySelector('email-input')) === null || _a === void 0 ? void 0 : _a.shadowRoot) === null || _b === void 0 ? void 0 : _b.querySelector('#emailInput')) === null || _c === void 0 ? void 0 : _c.value;
-        const pass = (_f = (_e = (_d = document.querySelector('password-input')) === null || _d === void 0 ? void 0 : _d.shadowRoot) === null || _e === void 0 ? void 0 : _e.querySelector('#passInput')) === null || _f === void 0 ? void 0 : _f.value;
-        const data = { email: email, password: pass };
+        const email = (_b = (_a = document.querySelector('email-input')) === null || _a === void 0 ? void 0 : _a.shadowRoot) === null || _b === void 0 ? void 0 : _b.querySelector('#emailInput');
+        const pass = (_d = (_c = document.querySelector('password-input')) === null || _c === void 0 ? void 0 : _c.shadowRoot) === null || _d === void 0 ? void 0 : _d.querySelector('#passInput');
+        const data = { id: uuidv4() };
         const apiIndex = new ApiIndex();
         const result = await apiIndex.login(data);
         resultP.innerText = result;
@@ -203,12 +247,12 @@ btLogin.addEventListener("click", async () => {
     }
 });
 btUpdate.addEventListener("click", async () => {
-    var _a, _b, _c, _d, _e, _f, _g, _h, _j;
+    var _a, _b, _c, _d, _e, _f;
     try {
-        const name = (_c = (_b = (_a = document.querySelector('name-input')) === null || _a === void 0 ? void 0 : _a.shadowRoot) === null || _b === void 0 ? void 0 : _b.querySelector('#nameInput')) === null || _c === void 0 ? void 0 : _c.value;
-        const email = (_f = (_e = (_d = document.querySelector('email-input')) === null || _d === void 0 ? void 0 : _d.shadowRoot) === null || _e === void 0 ? void 0 : _e.querySelector('#emailInput')) === null || _f === void 0 ? void 0 : _f.value;
-        const pass = (_j = (_h = (_g = document.querySelector('password-input')) === null || _g === void 0 ? void 0 : _g.shadowRoot) === null || _h === void 0 ? void 0 : _h.querySelector('#passInput')) === null || _j === void 0 ? void 0 : _j.value;
-        const data = { name: name, email: email, password: pass };
+        const name = (_b = (_a = document.querySelector('name-input')) === null || _a === void 0 ? void 0 : _a.shadowRoot) === null || _b === void 0 ? void 0 : _b.querySelector('#nameInput');
+        const email = (_d = (_c = document.querySelector('email-input')) === null || _c === void 0 ? void 0 : _c.shadowRoot) === null || _d === void 0 ? void 0 : _d.querySelector('#emailInput');
+        const pass = (_f = (_e = document.querySelector('password-input')) === null || _e === void 0 ? void 0 : _e.shadowRoot) === null || _f === void 0 ? void 0 : _f.querySelector('#passInput');
+        const data = { id: uuidv4(), name: name.value, email: email.value, password: pass.value };
         const apiIndex = new ApiIndex();
         const result = await apiIndex.update(data);
         resultP.innerText = result;
