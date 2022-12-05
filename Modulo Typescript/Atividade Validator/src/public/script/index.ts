@@ -1,6 +1,4 @@
-import { BodyData, LoginData, UserData } from './interfaces.js';
 import { v4 as uuidv4 } from 'uuid';
-import ApiIndex from './api/index.js';
 
 //Activity 1
 class Validator {
@@ -200,6 +198,78 @@ customElements.define("name-input", NameInput);
 customElements.define("password-input", PasswordInput);
 
 //Q2
+interface Response<T>{
+    data: T;
+    message: Array<string>;
+}
+
+interface UserData{
+    id: string;
+    name: string;
+    email: string;
+    password: string;
+}
+
+interface LoginData{
+    id: string;
+}
+
+interface BodyData{
+    name: string;
+    email: string;
+    password: string;
+}
+
+class ApiIndex{
+    async register(data: BodyData): Promise<Response<BodyData>>{
+        try {
+            const options = { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(data) };
+            const response = await fetch("/accounts/", options);
+    
+            if (!response.ok) {
+                const message = await response.json();
+                throw new Error(message.error);
+            }
+            return await response.json();
+        } catch (error: any) {
+            return error;
+        }
+
+    }
+
+    async login(data: LoginData): Promise<Response<LoginData>>{
+        try {
+            const options = { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(data) };
+            const response = await fetch("/accounts/login", options);
+    
+            if (!response.ok) {
+                const message = await response.json();
+                throw new Error(message.error);
+            }
+            return await response.json();
+        } catch (error: any) {
+            return error;
+        }
+      
+    }
+
+    async update(data: UserData): Promise<Response<UserData>> {
+        try {
+            const options = { method: "PATCH", headers: { "Content-Type": "application/json" }, body: JSON.stringify(data) };
+            const response = await fetch("/accounts", options);
+    
+            if (!response.ok) {
+                const message = await response.json();
+                throw new Error(message.error);
+            }
+            return await response.json();
+        } catch (error: any) {
+            return error;
+        }
+
+    }
+}
+
 const btReg: any = document.querySelector("#btReg");
 const btLogin: any = document.querySelector("#btLogin");
 const btUpdate: any = document.querySelector("#btUpdate");
@@ -207,10 +277,10 @@ const resultP: any = document.querySelector("#result");
 
 btReg.addEventListener("click", async () => {
     try {
-        const name: any = document.querySelector('name-input')?.shadowRoot?.querySelector('#nameInput')?.value;
-        const email: any = document.querySelector('email-input')?.shadowRoot?.querySelector('#emailInput')?.value;
-        const pass: any = document.querySelector('password-input')?.shadowRoot?.querySelector('#passInput')?.value;
-        const data: BodyData = {name: name, email: email, password: pass};
+        const name: any = document.querySelector('name-input')?.shadowRoot?.querySelector('#nameInput');
+        const email: any = document.querySelector('email-input')?.shadowRoot?.querySelector('#emailInput');
+        const pass: any = document.querySelector('password-input')?.shadowRoot?.querySelector('#passInput');
+        const data: BodyData = {name: name.value, email: email.value, password: pass.value};
         const apiIndex = new ApiIndex();
         const result = await apiIndex.register(data);
         resultP.innerText = result;
@@ -221,8 +291,8 @@ btReg.addEventListener("click", async () => {
 
 btLogin.addEventListener("click", async () => {
     try {
-        const email: any = document.querySelector('email-input')?.shadowRoot?.querySelector('#emailInput')?.value;
-        const pass: any = document.querySelector('password-input')?.shadowRoot?.querySelector('#passInput')?.value;
+        const email: any = document.querySelector('email-input')?.shadowRoot?.querySelector('#emailInput');
+        const pass: any = document.querySelector('password-input')?.shadowRoot?.querySelector('#passInput');
         const data: LoginData = {id: uuidv4()}
         const apiIndex = new ApiIndex();
         const result = await apiIndex.login(data);
@@ -234,10 +304,10 @@ btLogin.addEventListener("click", async () => {
 
 btUpdate.addEventListener("click", async () => {
     try{
-        const name: any = document.querySelector('name-input')?.shadowRoot?.querySelector('#nameInput')?.value;
-        const email: any = document.querySelector('email-input')?.shadowRoot?.querySelector('#emailInput')?.value;
-        const pass: any = document.querySelector('password-input')?.shadowRoot?.querySelector('#passInput')?.value;
-        const data: UserData = {id: uuidv4(), name: name, email: email, password: pass};
+        const name: any = document.querySelector('name-input')?.shadowRoot?.querySelector('#nameInput');
+        const email: any = document.querySelector('email-input')?.shadowRoot?.querySelector('#emailInput');
+        const pass: any = document.querySelector('password-input')?.shadowRoot?.querySelector('#passInput');
+        const data: UserData = {id: uuidv4(), name: name.value, email: email.value, password: pass.value};
         const apiIndex = new ApiIndex();
         const result = await apiIndex.update(data);
         resultP.innerText = result;
