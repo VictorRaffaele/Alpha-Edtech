@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import {Modal} from './modal';
 import {EmailValidator, NameValidator, PasswordValidator} from './validator/validator.js';
+import {FormUser} from './formNewUser';
 
-export function Form() {
+export function FormLogin() {
     let [modalOpened, setModalOpened] = useState<boolean>(false);
     function tryEmail(email: any){
       try {
@@ -10,15 +11,6 @@ export function Form() {
       }
       catch (error: any) {
         throw new Error('Email: ' + error.message);
-      }
-    }
-    
-    function tryName(name: any) {
-      try {
-        new NameValidator(name);
-      }
-      catch (error: any) {
-        throw new Error('Name: ' + error.message);
       }
     }
     
@@ -34,16 +26,13 @@ export function Form() {
       async function submit(e: any) {
         const resultP: any = document.querySelector('#resultP');
         const email: any = document.querySelector("#input-email");
-        const name: any = document.querySelector("#input-name");
         const password: any = document.querySelector("#input-pass");
         e.preventDefault();
         try {
           tryEmail(email.value);
-          tryName(name.value);
           tryPass(password.value);
           const usr = {
             "email" : email.value,
-            "name" : name.value,
             "password": password.value
           };
           console.log(JSON.stringify(usr));
@@ -69,17 +58,24 @@ export function Form() {
           resultP.innerHTML = error.message;
         }
       }
+
       return (
         <>
+          <header className="App-header">
+            <h1>Login</h1>
+            <nav>
+              <ul>
+                <button>New User</button>
+              </ul>
+            </nav>
+          </header>
           {modalOpened? <Modal position='fixed' opened={[modalOpened, setModalOpened]}/> : <></>}
           <form onSubmit={submit}>
             <label htmlFor='input-email'>Email:</label>
             <input id='input-email' type='text'></input>
-            <label htmlFor='input-name'>Nome:</label>
-            <input id='input-name' type='text'></input>
-            <label htmlFor='input-pass'>Senha:</label>
+            <label htmlFor='input-pass'>Password:</label>
             <input id='input-pass' type='password'></input>
-            <button>Entrar</button>
+            <button>Login</button>
             <p id='resultP'></p>
           </form>
         </>

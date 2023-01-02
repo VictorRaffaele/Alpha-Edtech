@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App.js';
 import reportWebVitals from './reportWebVitals.js';
-import { Form } from './form.tsx';
+import { FormLogin } from './formLogin.tsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <App>
-        <Form/>
+        <FormLogin/>
     </App>
 );
 
