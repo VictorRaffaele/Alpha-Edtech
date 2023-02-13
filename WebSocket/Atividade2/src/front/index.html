@@ -1,0 +1,14 @@
+<head></head>
+<body>
+    <from id="chatDiv">
+        <label for="sender">Nome:</label>
+        <input type="text" id="sender">
+        <label for="msg">Mensagem:</label>
+        <input type="text" id="msg">
+        <button type="submit" id="send">Enviar</button>
+        <button id="leave">Sair</button>
+        <textarea name="chat" id="chat" style="resize:none; width: 100%; height: 25%; margin-top: 2vh;" readonly></textarea>
+    </from>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="module" src="./index.js"></script>
+</body>
